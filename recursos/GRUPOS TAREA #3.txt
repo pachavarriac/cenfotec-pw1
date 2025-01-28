@@ -1,0 +1,56 @@
+-----------------------------------
+GRUPOS TAREA #3 INVESTIGATIVA
+ENTREGA-EXPOSICION: SEMANA9
+-----------------------------------
+
+GRUPO #1
+-----------------------------------------------
+TEMA: Ingenieria y etapas del desarrollo web
+ALVAREZ SOSA DIEGO JOSE
+ARCE ABARCA FERNANDO JOSE
+CARRILLO REYES ALEXANDER GUILLERMO
+
+
+GRUPO #2
+----------------------------------------------
+TEMA: Arquitectura por capas en software
+CASTELLON GUELL JOSE DANIEL
+CASTILLO COTO NATHAN ENRIQUE
+CHAVARRIA CAMPOS PABLO ANDRES
+
+
+GRUPO #3
+-------------------------------------------
+TEMA: Prototipos de una aplicación web
+CUBILLO SOLANO ALEJANDRO JOSE
+GRANADOS ROJAS MICHELLE 
+HAMPTON NAVARRO DERICK  ANTONIO
+
+
+GRUPO #4
+-----------------------------------
+TEMA: Modelado Unificado UML
+HIDALGO CHAVARRIA JORGE ANDREY
+MATA ARIAS JIMENA 
+MONTERO  AGUERO PAULINA JULIANA
+
+
+GRUPO #5
+------------------------------------------------
+TEMA: Diseño de interfaces de usuario (UX-UI)
+RAMIREZ OROZCO DANIEL JESUS
+SANCHEZ  ROSALES RONALD 
+SEGURA UMAÑA JONATHAN ALBERTO
+
+
+GRUPO #6
+--------------------------------------------------
+TEMA: Herramientas de tecnología Java Script
+VALVERDE BARAHONA ABEL EDUARDO
+VARGAS CERDAS JOHNNY ANDRES 
+VENEGAS SOLIS EMANUEL 
+WING MORA AXEL PABLO
+
+
+
+
