@@ -40,7 +40,7 @@
 
 ###
 
-<h4 align="left">🔸📂 cenfotec-pw1/<br>🔸🔸📂 tareas/<br>🔸🔸📂 practicas_clase/<br>🔸🔸📂 proyecto_final/</h4>
+<h4 align="left">🔸📂 cenfotec-pw1/🔸🔸📂 practicas_clase/<br>🔸🔸📂 proyecto_final/<br>🔸🔸📂 tareas/<br></h4>
 
 ###
 
