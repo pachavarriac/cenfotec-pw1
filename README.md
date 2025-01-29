@@ -24,7 +24,7 @@
 
 ###
 
-<p align="left">Este espacio está diseñado para organizar y respaldar el trabajo realizado durante el curso de Programación Web 1 (PW1) y proyectos relacionados.</p>
+<p align="left">Este espacio está diseñado para organizar y respaldar el trabajo realizado durante el curso de Proyecto Web 1 (PW1) y proyectos relacionados.</p>
 
 ###
 
