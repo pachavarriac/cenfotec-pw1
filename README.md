@@ -24,7 +24,7 @@
 
 ###
 
-<p align="left">Este espacio está diseñado para organizar y respaldar el trabajo realizado durante el curso de Proyecto Web 1 (PW1) y proyectos relacionados.</p>
+<p align="left">Este espacio está diseñado para organizar y respaldar el trabajo realizado durante el curso de Programación Web 1 (PW1) y proyectos relacionados.</p>
 
 ###
 
@@ -58,6 +58,23 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+</div>
+
+###
+
+<img src="https://raw.githubusercontent.com/pachavarriac/pachavarriac/output/snake.svg" alt="Snake animation" />
+
+###
+
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=pachavarriac&hide_title=true&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=merko&locale=en&hide_border=true&order=1" height="150" alt="stats graph" /> <br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=pachavarriac&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=5&theme=merko&hide_border=true&order=2" height="150" alt="languages graph"  />
+</div>
+
+###
+
+<div align="center">
+  <img src="https://profile-counter.glitch.me/pachavarriac/count.svg?"  />
 </div>
 
 ###
