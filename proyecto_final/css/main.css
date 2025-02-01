@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+
+body {
+  color: #121212;
+  background-color: #121212;
+  min-width: 800px;
+	display: flex;
+}
+
+
+
+p.headText {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: medium;
+	margin-left: 10px;
+}
