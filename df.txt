@@ -1,0 +1,20 @@
+Inicio
+    positivos = 0
+    negativos = 0
+    ceros = 0
+
+    Repetir
+        Escribir "Ingrese un número:"
+        Leer numero
+
+    Si numero es menor que -1
+		negativos = negativos + 1
+	Sino numero es igual a cero
+		ceros = ceros + 1
+        Sino numero es mayor que 0
+		positivos = positivos + 1
+	Sino numero es igual a -1
+        Escribir "Total de números positivos:", positivos
+        Escribir "Total de números negativos:", negativos
+        Escribir "Total de ceros:", ceros
+Fin
