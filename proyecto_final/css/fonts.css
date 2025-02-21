@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "Poppins";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/Poppins-Regular.ttf") format(truetype);
+}
+
+@font-face {
+	font-family: "Vast Shadow";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/VastShadow-Regular.ttf") format(truetype);
+}
