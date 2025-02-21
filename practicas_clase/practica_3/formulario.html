@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section>
+        <form method="post">
+            <fieldset>
+                <legend>
+                    <h2>Informacion personal</h2>
+                </legend>
+                <br>
+                <h3><label>Nombre</label></h3>
+                <input name="name" type="text" maxlength="100" size="50" placeholder="Escriba su nombre" required>
+                <br>
+                <br>
+                <h3><label>Apellidos</label></h3>
+                <input name="lastname" type="text" maxlength="100" size="50" placeholder="Escriba su apellido" required>
+                <br>
+                <br>
+                <h3><label>Correo</label></h3>
+                <input name="email" type="email" maxlength="100" size="50" placeholder="your_email@example.com" required>
+                <br><br>
+                <h3>Escoja un color</h3>
+                <input type="radio" name="colorR" id="colorR" value="red">Rojo<br>
+                <input type="radio" name="colorG" id="colorG" value="green">Verde<br>
+                <input type="radio" name="colorB" id="colorB" value="blue">Azul
+                <br><br>
+                <h3>Escoja una fruta</h3>
+                <input type="checkbox" name="uva" id="uva" value="Uva">Uva<br>
+                <input type="checkbox" name="fresa" id="fresa" value="Fresa">Uva<br>
+                <input type="checkbox" name="manzana" id="manzana" value="Uva">Manzana
+                <br><br>
+                <h3>Elija un estado civil</h3>
+                <select name="estado civil" id="civil">
+                    <option value="S">Soltero(a)</option>
+                    <option value="C">Casado(a)</option>
+                    <option value="D">Divorciado(a)</option>
+                    <option value="V">Viudo(a)</option>
+                </select>
+                <h3><label>Mensaje</label></h3>
+                <textarea name="message" rows="10" cols="50" placeholder="Escriba su mensaje" required></textarea>
+                <br><br><br>
+                <input type="submit" value="Enviar" name="Enviar">
+                <input type="reset" value="Borrar" name="Borrar">
+            </fieldset>
+        </form>
+    </section>
+
+</body>
+
+</html>

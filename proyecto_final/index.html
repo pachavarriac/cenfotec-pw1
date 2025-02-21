@@ -6,12 +6,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Royal Motors</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-	<header class="headBody">
-		<p class="headText">Location: 14 Hillside Crescent, Cambridge. United Kindom</p>
+	<div class="main-video-background">
+		<video autoplay muted loop id="workshopVideo">
+			<source src="media/workshop_04.mp4" type="video/mp4">
+		</video>
+	</div>
+	<header class="top-bar">
+		<div class="inner-top-bar-left">
+			<p class="head-text">
+				<img src="images/location.png" alt="location" class="icon">
+				c. 115, Av. 97. Alajuela. Costa Rica
+			</p>
+			<p class="head-text">
+				<img src="images/telephone.png" alt="telephone" class="icon">
+				+506 8888-1234
+			</p>
+		</div>
+		<div class="inner-top-bar-right">
+			<p class="question">¿Ya eres cliente? </p>
+			<a href="login.html">
+				<button type="button" class="medium">
+					Iniciar Sesion
+				</button>
+			</a>
+		</div>
 	</header>
+	<nav>
+		<img src="images/logo.png" alt="logo" class="logo">
+		<ul class="menu">
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</nav>
 </body>
 
 </html>
