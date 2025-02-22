@@ -1,0 +1,45 @@
+.head-text {
+	color: antiquewhite;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+.top-bar {
+	justify-content: center;
+	align-items: center;
+	width: 1280px;
+	min-width: 1280px;
+	height: 30px;
+	display: flex;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
+.topbar-icon {
+	height: 10px;
+	margin-left: 5px;
+	transform: rotateY(180deg);
+}
+
+.top-bar-left {
+	display: flex;
+	width: 50%;
+	margin-left: 20px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.top-bar-right {
+	display: flex;
+	width: 50%;
+	margin-right: 20px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.question {
+	margin-right: 10px;
+	color: antiquewhite;
+}

@@ -4,53 +4,199 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Royal Motors</title>
+	<title>El Garage De La Esquina</title>
 	<!-- CSS Styles -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/buttons.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/top-bar.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/cards.css">
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-	<div class="video-background">
-		<video autoplay muted loop class="login-video">
-			<source src="media/workshop_04.mp4" type="video/mp4">
-		</video>
-	</div>
-	<header class="top-bar">
-		<div class="inner-top-bar-left">
-			<p class="head-text">
-				<img src="images/location.png" alt="location" class="icon">
-				c. 115, Av. 97. Alajuela. Costa Rica
-			</p>
-			<p class="head-text">
-				<img src="images/telephone.png" alt="telephone" class="icon">
-				+506 8888-1234
-			</p>
-		</div>
-		<div class="inner-top-bar-right">
-			<p class="question">¿Ya eres cliente? </p>
-			<a href="login.html">
-				<button type="button" class="medium">
-					Iniciar Sesion
-				</button>
-			</a>
+	<header>
+		<div class="top-bar">
+			<div class="top-bar-left">
+				<p class="head-text arial-regular-s">
+					<img src="images/location.png" alt="location" class="topbar-icon">
+					c. 115, Av. 97. Alajuela. Costa Rica
+				</p>
+				<p class="head-text arial-regular-s">
+					<img src="images/telephone.png" alt="telephone" class="topbar-icon">
+					800-438255377
+				</p>
+			</div>
+			<div class="top-bar-right">
+				<p class="arial-regular-s question">¿Ya eres cliente? ➜</p>
+				<a href="login.html">
+					<button type="button" class="menu-button">
+						Iniciar Sesión
+					</button>
+				</a>
+			</div>
 		</div>
 	</header>
 
 	<div class="body-div">
 		<div class="inner-body-div">
 			<nav>
-				<img src="images/logo.png" alt="logo" class="logo">
-				<ul class="menu">
-					<li><a href="#">Inicio</a></li>
+				<div class="video-background">
+					<video autoplay muted loop class="login-video">
+						<source src="media/workshop_04.mp4" type="video/mp4">
+					</video>
+				</div>
+				<img src="images/logo.png" alt="logo" class="menu-logo">
+				<ul class="menu arial-regular-l">
+					<li><a href="#" class="menu-active">Inicio</a></li>
 					<li><a href="#">Servicios</a></li>
 					<li><a href="#">Contacto</a></li>
 				</ul>
 			</nav>
-			<p>Este es un contenido de prueba para ver el fondo.</p>
+			<article>
+				<div class="t2">
+					<button class="square-button">Agenda una cita</button>
+					<div style="width: 60px;"></div>
+					<button class="square-button">Llamenos: 800-438255377</button>
+				</div>
+				<img src="images/logo.png" alt="logo" class="main-logo">
+				<div class="t2">
+					<div class="card-1">
+						<div>
+							<img src="images/calendar-time-64.png" alt="calendar" class="card-icon">
+						</div>
+						<div class="card-1-rs">
+							<h1>
+								Horario
+							</h1>
+							<p>
+								Lun-Vie: 8:00 am - 5:00 pm<br>
+								Sáb: 9:00 am - 4:00 pm<br>
+								Dom: Cerrado
+							</p>
+						</div>
+					</div>
+					<div class="card-1">
+						<div>
+							<img src="images/location-64.png" alt="calendar" class="card-icon">
+						</div>
+						<div class="card-1-rs">
+							<h1>
+								Ubicación y Contacto
+							</h1>
+							<p>
+								Local 64<br>
+								Calle 115, Avenida 97<br>
+								Alajuela, Costa Rica<br>
+								20164
+							</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="div-1">
+					<h1 class="arial-regular-xxl">
+						Un taller mecánico en Costa Rica establecido y de excelente reputación
+					</h1>
+					<p class="arial-regular-l">
+						Cualquiera que viva en Costa Rica sabe lo dura que puede ser la actual infraestructura vial para
+						los automóviles y camiones. Entre las paradas y arranques constantes del tráfico, los baches
+						peligrosos que pueden dañar permanentemente las ruedas, y una gran variedad de otros factores,
+						hacen que los vehiculos se dañen de forma acelerada. Por esta razon los dueños de vehiculos
+						deben tener una relación con un profesional de reparación, calificado y de excelente reputación.
+						En El Garage De La Esquina nos enorgullosemos de brindar servicios de reparación de alta calidad
+						para sus vehiculos a precios acsequibles. Si necesita servicios de reparación de automóviles y
+						camiones llame a El Garage De La Esquina ahora. Estamos para servirle.
+					</p>
+				</div>
+				<div class="t3">
+					<div class="card-2">
+						<div>
+							<img src="images/calendar-64.png" alt="calendar" class="card-icon">
+						</div>
+						<div class="card-2-rs">
+							<h2>
+								Citas en línea
+							</h2>
+							<p>
+								¿Necesita más flexibilidad? Reserve un servicio en El Garage De La Esquina en el horario
+								y la fecha que le resulten más convenientes.
+							</p>
+						</div>
+					</div>
+					<div class="card-2">
+						<div>
+							<img src="images/monitor-64.png" alt="calendar" class="card-icon">
+						</div>
+						<div class="card-2-rs">
+							<h2>
+								Escaneo de motor GRATIS
+							</h2>
+							<p>
+								¿Problemas inesperados con tu vehiculo? Visitanos para que un profesional te haga una revisión antes de que la cosa empeore. Te realizamos un escaneo de tu motos sin costo alguno para que tomes la desición adecuada.
+							</p>
+						</div>
+					</div>
+					<div class="card-2">
+						<div>
+							<img src="images/monitor-64.png" alt="calendar" class="card-icon">
+						</div>
+						<div class="card-2-rs">
+							<h2>
+								Citas en línea
+							</h2>
+							<p>
+								¿Necesita más flexibilidad? Reserve un servicio en El Garage De La Esquina en el
+								horario y la fecha que le resulten más convenientes.
+							</p>
+						</div>
+					</div>
+					<div class="card-2">
+						<div>
+							<img src="images/monitor-64.png" alt="calendar" class="card-icon">
+						</div>
+						<div class="card-2-rs">
+							<h2>
+								Citas en línea
+							</h2>
+							<p>
+								¿Necesita más flexibilidad? Reserve un servicio en El Garage De La Esquina en el
+								horario y la fecha que le resulten más convenientes.
+							</p>
+						</div>
+					</div>
+					<div class="card-2">
+						<div>
+							<img src="images/monitor-64.png" alt="calendar" class="card-icon">
+						</div>
+						<div class="card-2-rs">
+							<h2>
+								Citas en línea
+							</h2>
+							<p>
+								¿Necesita más flexibilidad? Reserve un servicio en El Garage De La Esquina en el
+								horario y la fecha que le resulten más convenientes.
+							</p>
+						</div>
+					</div>
+					<div class="card-2">
+						<div>
+							<img src="images/monitor-64.png" alt="calendar" class="card-icon">
+						</div>
+						<div class="card-2-rs">
+							<h2>
+								Citas en línea
+							</h2>
+							<p>
+								¿Necesita más flexibilidad? Reserve un servicio en El Garage De La Esquina en el
+								horario y la fecha que le resulten más convenientes.
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
 		</div>
 	</div>
 </body>

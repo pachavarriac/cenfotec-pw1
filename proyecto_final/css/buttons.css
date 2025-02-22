@@ -1,0 +1,69 @@
+button {
+  cursor: pointer;
+}
+
+.menu-button,
+.login-button {
+  border: 0;
+  background-color: #4ac590;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.menu-button:focus,
+.menu-button:hover,
+.login-button:focus,
+.login-button:hover {
+  background-color: #4ac590;
+  box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
+}
+
+.menu-button {
+  color: black;
+  font-size: x-small;
+  padding: 4px 12px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+
+.menu-button:focus,
+.menu-button:hover {
+  color: black;
+}
+
+.menu-button:active {
+  background-color: #35a776;
+  box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
+}
+
+.login-button {
+  letter-spacing: 4px;
+  font-size: medium;
+  padding: 17px 50px;
+  border-radius: 50px;
+  font-family: "Arial Regular";
+  font-weight: bold;
+  color: white;
+}
+
+.login-button:focus,
+.login-button:hover {
+  color: white;
+}
+
+.login-button:active {
+  background-color: #35a776;
+  box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
+}
+
+.square-button {
+    border: 0;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  padding: 20px 40px;
+  background-color: #202020;
+  font-family: "Arial Regular";
+  letter-spacing: 2px;
+}

@@ -1,13 +1,37 @@
-@font-face {
-	font-family: "Poppins";
-	font-weight: normal;
-	font-style: normal;
-	src: url("../fonts/Poppins-Regular.ttf") format(truetype);
-}
+/* Font Sources */
 
 @font-face {
-	font-family: "Vast Shadow";
+	font-family: "Arial Regular";
 	font-weight: normal;
 	font-style: normal;
-	src: url("../fonts/VastShadow-Regular.ttf") format(truetype);
+	src: url("../fonts/Arial-Regular.ttf") format(truetype);
+}
+
+.arial-regular-s{
+    font-family: 'Arial Regular';
+	font-size: small;
+}
+
+.arial-regular-m{
+    font-family: 'Arial Regular';
+	font-size: medium;
+}
+
+.arial-regular-l{
+    font-family: 'Arial Regular';
+	font-size: large;
+}
+
+.arial-regular-xl{
+    font-family: 'Arial Regular';
+	font-size: x-large;
+}
+
+.arial-regular-xxl{
+    font-family: 'Arial Regular';
+	font-size: xx-large;
+}
+
+.fc1{
+    color: antiquewhite;
 }
