@@ -4,13 +4,13 @@
 }
 
 .card-1 {
-  background-color: white;
+  background-color: rgb(253, 253, 253);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px;
-  width: 350px;
-  height: 156px;
+  margin: 30px;
+  height: 230px;
+  width: 400px;
   text-align: center;
   display: flex;
   flex-direction: row;
