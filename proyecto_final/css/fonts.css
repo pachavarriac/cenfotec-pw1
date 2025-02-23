@@ -1,37 +1,40 @@
 /* Font Sources */
 
 @font-face {
-	font-family: "Arial Regular";
-	font-weight: normal;
-	font-style: normal;
-	src: url("../fonts/Arial-Regular.ttf") format(truetype);
+  font-family: "Open Sans Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular.ttf") format(truetype);
 }
 
-.arial-regular-s{
-    font-family: 'Arial Regular';
-	font-size: small;
+* {
+  font-family: "Open Sans Regular";
 }
 
-.arial-regular-m{
-    font-family: 'Arial Regular';
-	font-size: medium;
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.arial-regular-l{
-    font-family: 'Arial Regular';
-	font-size: large;
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
 }
 
-.arial-regular-xl{
-    font-family: 'Arial Regular';
-	font-size: x-large;
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.arial-regular-xxl{
-    font-family: 'Arial Regular';
-	font-size: xx-large;
+p {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 0.2rem;
 }
 
-.fc1{
-    color: antiquewhite;
+.fc1 {
+  color: antiquewhite;
 }

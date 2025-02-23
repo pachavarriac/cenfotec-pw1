@@ -12,13 +12,17 @@ html {
 }
 
 nav,
-header {
+header,
+section,
+footer {
+	margin: 0;
+	padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-width: 1280px;
-  z-index: 1001;
+  min-width: 100%;
+  z-index: 1000;
   position: relative;
 }
 
@@ -32,83 +36,81 @@ nav {
 }
 
 article {
-  justify-items: center;
+  text-align: justify;
+  min-width: 1280px;
 }
 
 hr {
   width: 1000px;
   height: 1px;
-  margin: 50px;
+  margin-top: 40px;
   border: 0;
   background-color: lightgray;
 }
 
 footer {
-  max-height: 60px;
-  align-items: center;
+  margin-top: 80px;
+  padding: 8px;
+  align-items: normal;
   text-align: center;
   background-color: #2c2c2c;
   color: antiquewhite;
-  bottom: 0;
 }
 
 .main-logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
   max-height: 300px;
   filter: drop-shadow(0px 0px 8px gray);
+
+}
+
+.div-margin {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bg2 {
+  background-color: #ececec;
 }
 
 .body-div {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  min-width: 100%;
-  z-index: 1;
-  height: 100vh;
-  position: relative;
-  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 1280px;
+  min-width: 1280px;
+  height: 100%;
+  justify-content: center;
+/* Borrar esto despues */
+  /* background-color: grey; */
 }
 
-.inner-body-div {
-  padding: 0;
-  margin: 0;
+.body-div-inner {
   display: flex;
-  flex-direction: column;
-  width: 100%;
   min-width: 1280px;
-  min-height: 100%;
-}
-
-.t2 {
-  display: flex;
-  background-color: white;
-  width: 100%;
-  min-width: 1280px;
-  padding: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   align-items: center;
   justify-content: center;
   gap: 80px;
 }
 
-.t3 {
+.a1 {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #ececec;
-  width: 100%;
+  flex-wrap: wrap;
   min-width: 1280px;
-  align-items: center;
-  justify-content: space-evenly;
+  max-width: 1280px;
 }
 
-.t3-i {
+.t3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 1280px;
   max-width: 1280px;
-  justify-content: space-around;
   box-sizing: content-box;
 }
 
