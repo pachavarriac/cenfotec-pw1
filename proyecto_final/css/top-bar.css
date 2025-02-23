@@ -1,24 +1,22 @@
 .head-text {
-  color: antiquewhite;
+  color: white;
   margin-left: 10px;
   margin-right: 10px;
   text-align: left;
+  align-items: center;
 }
 
 .top-bar {
   justify-content: center;
-  align-items: center;
   width: 1280px;
   min-width: 1280px;
   height: 60px;
   display: flex;
-  top: 0;
-  left: 0;
   position: relative;
 }
 
 .topbar-icon {
-  height: 10px;
+  height: 20px;
   margin-left: 5px;
   transform: rotateY(180deg);
 }
@@ -41,6 +39,6 @@
 
 .question {
   margin-right: 10px;
-  color: antiquewhite;
+  color: white;
 	font-weight: bold;
 }

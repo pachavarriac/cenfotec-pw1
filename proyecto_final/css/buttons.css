@@ -22,7 +22,7 @@ button {
 .menu-button {
   color: black;
   font-size: x-small;
-  padding: 4px 12px;
+  padding: 8px 12px;
   border-radius: 50px;
   letter-spacing: 1px;
 }
@@ -30,6 +30,7 @@ button {
 .menu-button:focus,
 .menu-button:hover {
   color: black;
+  box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
 }
 
 .menu-button:active {

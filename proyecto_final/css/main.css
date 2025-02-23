@@ -22,13 +22,15 @@ footer {
   justify-content: center;
   width: 100%;
   min-width: 100%;
-  z-index: 1000;
+  z-index: 1;
   position: relative;
 }
 
 header {
+  display: flex;
   background-color: black;
-  min-height: 30px;
+  min-height: 60px;
+  height: 60px;
 }
 
 nav {
