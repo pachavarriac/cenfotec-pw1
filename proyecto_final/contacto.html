@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/top-bar.css">
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="stylesheet" href="css/cards.css">
+	<link rel="stylesheet" href="css/contact.css">
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
@@ -52,7 +53,43 @@
 			<li><a href="#">Contacto</a></li>
 		</ul>
 	</nav>
-	<section>
+	<section id="content-margin">
+		<div id="body-div">
+			<h1>Contacto</h1>
+		</div>
+	</section>
+	<section id="content-margin">
+		<div id="body-div">
+			<form class="form">
+				<div class="form-control-900">
+					<input type="text" id="nombre" required>
+					<label for="nombre">
+						<span>Nombre</span>
+					</label>
+				</div>
+				<div id="form-margin">
+					<div class="form-control-400">
+						<input type="email" id="email" required>
+						<label for="email">
+							<span>Email</span>
+						</label>
+					</div>
+					<div class="form-control-400">
+						<input type="tel" id="phone" required>
+						<label for="phone">
+							<span>Telefono</span>
+						</label>
+					</div>
+				</div>
+				<!-- Área de mensaje -->
+				<div class="form-control-900x400">
+					<textarea id="mensaje" required></textarea>
+					<label for="mensaje">
+						<span>Mensaje</span>
+					</label>
+				</div>
+			</form>
+		</div>
 	</section>
 	<footer>
 		©2025 El Garage De La Esquina | Todos los derechos reservados
