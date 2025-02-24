@@ -45,3 +45,20 @@ h3.card-1-rs {
 .card-2-ls {
   padding-top: 22px;
 }
+
+/* ************ */
+/* ** Card 3 ** */
+/* ************ */
+
+
+
+.circulo {
+  margin: o;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: black;
+}
