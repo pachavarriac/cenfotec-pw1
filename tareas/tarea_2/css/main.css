@@ -1,0 +1,113 @@
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 1280px;
+  overflow: scroll;
+  background-color: white;
+  z-index: -1000;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav,
+header,
+section,
+footer {
+	margin: 0;
+	padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  min-height: 60px;
+  height: 60px;
+}
+
+nav {
+  min-height: 120px;
+}
+
+article {
+  text-align: justify;
+  min-width: 1280px;
+}
+
+hr {
+  width: 1000px;
+  height: 1px;
+  margin-top: 40px;
+  border: 0;
+  background-color: lightgray;
+}
+
+footer {
+  padding: 20px;
+  align-items: normal;
+  text-align: center;
+  background-color: #2c2c2c;
+  color: white;
+  letter-spacing: 1px;
+}
+
+#body-div {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1280px;
+  min-width: 1280px;
+  height: 100%;
+  justify-content: center;
+}
+
+#main-logo-300 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-height: 300px;
+  filter: drop-shadow(0px 0px 8px gray);
+}
+
+#content-margin {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#body-div-inner {
+  display: flex;
+  min-width: 1280px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+#rotate-h {
+  transform: rotateY(180deg);
+}
+
+.bg2 {
+  background-color: #EDEDED;
+}
+
+.btn-separator {
+  margin: 20px;
+}
+
+.img-round-1 {
+  border-radius: 5px;
+  box-shadow: rgb(203, 203, 203) 0px 0px 25px 0px;
+}

@@ -1,0 +1,105 @@
+#form-margin {
+	display: flex;
+	flex-direction: row;
+	gap: 90px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: left;
+}
+
+.form-control-900 {
+  position: relative;
+  margin: 20px;
+  width: 900px;
+}
+
+.form-control-900x400 {
+  position: relative;
+  margin: 20px;
+  width: 900px;
+	height: 400px;
+}
+
+.form-control-400 {
+  position: relative;
+  margin: 10px 0 20px;
+  width: 400px;
+}
+
+.form-control-900 input,
+.form-control-400 input {
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  color: black;
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+.form-control-900 input:focus,
+.form-control-900 input:valid,
+.form-control-400 input:focus,
+.form-control-400 input:valid {
+  outline: 0;
+  padding-top: 16px;
+}
+
+.form-control-900 label,
+.form-control-400 label,
+.form-control-900x400 label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+	font-size: 16px;
+  pointer-events: none;
+}
+
+.form-control-900 label span,
+.form-control-400 label span,
+.form-control-900x400 label span {
+  display: inline-block;
+  min-width: 5px;
+  color: black;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control-900 input:focus + label span,
+.form-control-900 input:valid + label span,
+.form-control-400 input:focus + label span,
+.form-control-400 input:valid + label span,
+.form-control-900x400 textarea:focus + label span,
+.form-control-900x400 textarea:valid + label span {
+  color: #5b5b5b;
+	background-color: transparent;
+  transform: translate(-1px, -19px);
+  font-weight: bolder;
+  font-size: x-small;
+  letter-spacing: 1.5pt;
+}
+
+.form-control-900x400 textarea {
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  font-size: 16px;
+  color: black;
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+  resize: none; /* Evita que el usuario redimensione el textarea */
+}
+
+.form-control-900x400 textarea:focus,
+.form-control-900x400 textarea:valid {
+  outline: 0;
+  padding-top: 16px;
+}
