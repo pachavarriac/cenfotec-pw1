@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PROGRAMACION JS</title>
+    <meta charset="utf-8">    
+    <link href="imagenes/favicon.png" rel="icon">  
+    
+    <style>
+        body {
+            font-size: x-large;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        hr {
+            border-color: aqua;
+        }
+        button {
+            border: 0;
+            width: 150px;
+            background-color: goldenrod;
+            padding: 20px 12px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section>
+        <h1>Ejercicio 3</h1>
+        <p>Ver imagenes</p>
+        <button onclick="ver1()">Ver imagen 1</button>
+        <button onclick="ver2()">Ver imagen 2</button>
+        <button onclick="ocultar()">Ocultar</button>
+
+        <div id="ima0" style="display: block;">
+            <img src="imagenes/personaje.png" style="padding-top: 30px">
+        </div>
+        
+        <div id="ima1" style="display: none;">
+            <img src="imagenes/logo1.png" style="padding-top: 30px">
+        </div>
+        
+        <div id="ima2" style="display: none;">
+            <img src="imagenes/logo2.png" style="padding-top: 30px">
+        </div>
+
+    </section>
+    <script>
+        function ver1() {
+            document.getElementById("ima1").style.display = 'block';
+            document.getElementById("ima2").style.display = 'none';
+            document.getElementById("ima0").style.display = 'none';
+        }
+    </script>
+    <script>
+        function ver2() {
+            document.getElementById("ima2").style.display = 'block';
+            document.getElementById("ima1").style.display = 'none';
+            document.getElementById("ima0").style.display = 'none';
+        }
+    </script>
+    <script>
+        function ocultar() {
+            document.getElementById("ima1").style.display = 'none';
+            document.getElementById("ima2").style.display = 'none';
+            document.getElementById("ima0").style.display = 'none';
+        }
+    </script>
+</body>
+</html>
