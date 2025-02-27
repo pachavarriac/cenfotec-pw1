@@ -21,17 +21,17 @@
 	<header>
 		<div class="top-bar">
 			<div class="top-bar-left">
-				<p class="head-text small">
+				<p class="head-text">
 					<img src="images/location.png" alt="location" class="topbar-icon">
 					c. 115, Av. 97. Alajuela. Costa Rica
 				</p>
-				<p class="head-text small">
+				<p class="head-text">
 					<img src="images/telephone.png" alt="telephone" class="topbar-icon">
 					800-438255377
 				</p>
 			</div>
 			<div class="top-bar-right">
-				<p class="question small">¿Ya eres cliente? ➜</p>
+				<p class="question">¿Ya eres cliente? ➜</p>
 				<a href="login.html">
 					<button type="button" class="headerButtonLogin">
 						Iniciar Sesión
@@ -51,50 +51,21 @@
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="servicios.html">Servicios</a></li>
 			<li><a href="#" id="menuActive">Contacto</a></li>
+			<li id="userAreaButton" style="display: none;">
+                <a href="app.html">Área de usuario</a>
+            </li>
 		</ul>
 	</nav>
 	<section id="contentMargin1">
 		<div id="bodyBlock">
-			<h1>Contacto</h1>
-		</div>
-	</section>
-	<section id="contentMargin1">
-		<div id="bodyBlock">
-			<form class="form">
-				<div class="formControl900">
-					<input type="text" id="nombre" required>
-					<label for="nombre">
-						<span>Nombre</span>
-					</label>
-				</div>
-				<div id="form-margin">
-					<div class="formControl400">
-						<input type="email" id="email" required>
-						<label for="email">
-							<span>Email</span>
-						</label>
-					</div>
-					<div class="formControl400">
-						<input type="tel" id="phone" required>
-						<label for="phone">
-							<span>Telefono</span>
-						</label>
-					</div>
-				</div>
-				<!-- Área de mensaje -->
-				<div class="formControl900x400">
-					<textarea id="mensaje" required></textarea>
-					<label for="mensaje">
-						<span>Mensaje</span>
-					</label>
-				</div>
-				<input type="submit">
-			</form>
+			
 		</div>
 	</section>
 	<footer>
 		©2025 El Garage De La Esquina | Todos los derechos reservados
 	</footer>
+
+	<script src="js/login.js"></script>
 </body>
 
 </html>

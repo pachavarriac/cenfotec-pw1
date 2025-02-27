@@ -1,4 +1,4 @@
-#card-icon-64 {
+#cardIcon64 {
   max-height: 64px;
   width: auto;
 }
@@ -31,6 +31,7 @@
   margin: 20px;
   width: 400px;
   box-shadow: 0 0 8px rgba(100, 100, 100, 0.2);
+  border-radius: 15px;
 }
 
 #card-2 {
@@ -40,9 +41,10 @@
 
 #card-3 {
   align-items: center;
-  margin: 10px;
+  margin: 12px;
   width: 1000px;
-  box-shadow: 0 0 8px rgba(100, 100, 100, 0.2);
+  box-shadow: 0 0 8px 2px rgba(92, 92, 92, 0.2);
+  border-radius: 50px;
 }
 
 #card-1-ls,

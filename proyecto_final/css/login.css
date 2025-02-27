@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
   width: 400px;
 }
 
-#video-background {
+#videoBackground {
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +49,7 @@ body::-webkit-scrollbar {
   opacity: 0.5;
 }
 
-#login-video {
+#loginVideo {
   min-width: 100vw;
   min-height: 100vh;
   width: auto;
@@ -74,13 +74,13 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-.form-control {
+.formControl {
   position: relative;
   margin: 10px 0 40px;
   width: 220px;
 }
 
-.form-control input {
+.formControl input {
   background-color: transparent;
   border: 0;
   border-bottom: 2px #fff solid;
@@ -91,31 +91,35 @@ body::-webkit-scrollbar {
   color: #fff;
 }
 
-.form-control input:focus,
-.form-control input:valid {
+.formControl input:focus,
+.formControl input:valid {
   outline: 0;
   border-bottom-color: #4ac590;
 }
 
-.form-control label {
+.formControl label {
   position: absolute;
   top: 10px;
   left: 0;
   pointer-events: none;
 }
 
-.form-control label span {
+.formControl label span {
   display: inline-block;
   min-width: 5px;
   color: #fff;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form-control input:focus + label span,
-.form-control input:valid + label span {
+.formControl input:focus + label span,
+.formControl input:valid + label span {
   color: #4ac590;
   transform: translateY(-30px);
   font-weight: bolder;
   font-size: small;
   letter-spacing: 1.5pt;
+}
+
+.message {
+  height: 30px;
 }

@@ -2,8 +2,8 @@ button {
   cursor: pointer;
 }
 
-.menu-button,
-.login-button {
+.headerButtonLogin,
+.loginButton {
   border: 0;
   background-color: #4ac590;
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
@@ -11,15 +11,15 @@ button {
   transition: all 0.2s ease;
 }
 
-.menu-button:focus,
-.menu-button:hover,
-.login-button:focus,
-.login-button:hover {
+.headerButtonLogin:focus,
+.headerButtonLogin:hover,
+.loginButton:focus,
+.loginButton:hover {
   background-color: #4ac590;
   box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
 }
 
-.menu-button {
+.headerButtonLogin {
   color: black;
   font-size: x-small;
   padding: 8px 12px;
@@ -27,18 +27,18 @@ button {
   letter-spacing: 1px;
 }
 
-.menu-button:focus,
-.menu-button:hover {
+.headerButtonLogin:focus,
+.headerButtonLogin:hover {
   color: black;
   box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
 }
 
-.menu-button:active {
+.headerButtonLogin:active {
   background-color: #35a776;
   box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
 }
 
-.login-button {
+.loginButton {
   letter-spacing: 4px;
   font-size: medium;
   padding: 17px 50px;
@@ -48,17 +48,17 @@ button {
   color: white;
 }
 
-.login-button:focus,
-.login-button:hover {
+.loginButton:focus,
+.loginButton:hover {
   color: white;
 }
 
-.login-button:active {
+.loginButton:active {
   background-color: #35a776;
   box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
 }
 
-.square-button {
+.squareButton {
   width: 325px;
   height: 65px;
   border: 0;
@@ -72,17 +72,17 @@ button {
   box-shadow: rgb(126, 126, 126) 0px 0px 15px 0px;
 }
 
-.square-button:hover {
+.squareButton:hover {
   color: #4ac590;
   box-shadow: rgb(74, 197, 144) 0px 0px 25px 0px;
 }
 
-.square-button:active {
+.squareButton:active {
   background-color: #4ac590;
   color: #000000;
   box-shadow: rgb(74, 197, 144) 0px 0px 25px 0px;
 }
-.square-button:focus {
+.squareButton:focus {
   color: white;
   box-shadow: rgb(126, 126, 126) 0px 0px 15px 0px;
 }

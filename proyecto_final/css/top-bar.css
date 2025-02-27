@@ -16,7 +16,7 @@
 }
 
 .topbar-icon {
-  height: 20px;
+  height: 15px;
   margin-left: 5px;
   transform: rotateY(180deg);
 }
@@ -34,7 +34,7 @@
   width: 50%;
   margin-right: 20px;
   justify-content: flex-end;
-  align-items: center;
+  align-items:center;
 }
 
 .question {

@@ -62,7 +62,11 @@ footer {
   letter-spacing: 1px;
 }
 
-#body-div {
+p.small{
+  font-size: medium;
+}
+
+#bodyBlock {
   display: flex;
   margin: 0;
   padding: 0;
@@ -72,30 +76,42 @@ footer {
   justify-content: center;
 }
 
-#main-logo-300 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+#mainLogo300 {
+  padding-top: 10px;
+  padding-bottom: 10px;
   max-height: 300px;
   filter: drop-shadow(0px 0px 8px gray);
 }
 
-#content-margin {
+#contentMargin1 {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
-#body-div-inner {
+#contentMargin2 {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#contentMargin3 {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+#bodyBlockInner {
   display: flex;
   min-width: 1280px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   align-items: center;
   justify-content: center;
   gap: 80px;
 }
 
-#rotate-h {
+#rotateH {
   transform: rotateY(180deg);
 }
 
@@ -103,11 +119,20 @@ footer {
   background-color: #EDEDED;
 }
 
-.btn-separator {
+.bg3 {
+  background-color: #2c2c2c;
+}
+
+.buttonSeparator {
   margin: 20px;
 }
 
-.img-round-1 {
-  border-radius: 5px;
-  box-shadow: rgb(203, 203, 203) 0px 0px 25px 0px;
+.marginX2 {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.imageRound1 {
+  border-radius: 15px;
+  box-shadow: rgb(60, 58, 58) 0px 0px 35px 20px;
 }
