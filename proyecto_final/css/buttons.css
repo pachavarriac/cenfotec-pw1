@@ -2,7 +2,7 @@ button {
   cursor: pointer;
 }
 
-.headerButtonLogin,
+/* .headerButtonLogin, */
 .loginButton {
   border: 0;
   background-color: #4ac590;
@@ -20,22 +20,24 @@ button {
 }
 
 .headerButtonLogin {
-  color: black;
-  font-size: x-small;
-  padding: 8px 12px;
+  background-color: transparent;
+  border: 1px white solid;
+  color: white;
+  font-size: medium;
+  padding: 10px 20px;
   border-radius: 50px;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .headerButtonLogin:focus,
-.headerButtonLogin:hover {
-  color: black;
-  box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
-}
-
+.headerButtonLogin:hover,
 .headerButtonLogin:active {
-  background-color: #35a776;
+  color: #4ac590;
+  border-color: #4ac590;
+  background-color: transparent;
   box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
+  transition: border 0.2s, color 0.2s; /* Transición suave */
 }
 
 .loginButton {
@@ -85,4 +87,26 @@ button {
 .squareButton:focus {
   color: white;
   box-shadow: rgb(126, 126, 126) 0px 0px 15px 0px;
+}
+
+.headerButtonLogout {
+  font-size: medium;
+  font-weight: bold;
+  letter-spacing: 0.3vw;
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: border 0.2s, color 0.2s;
+}
+
+.headerButtonLogout:hover,
+.headerButtonLogout:focus,
+.headerButtonLogout:active {
+  color: red;
+  border-color: red;
+  background-color: transparent;
+  box-shadow: rgb(255, 0, 0) 0px 0px 15px 0px;
 }

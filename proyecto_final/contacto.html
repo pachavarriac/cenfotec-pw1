@@ -31,9 +31,9 @@
 				</p>
 			</div>
 			<div class="top-bar-right">
-				<p class="question small">¿Ya eres cliente? ➜</p>
+				<p class="question small" id="loginTextQuestion">¿Ya eres cliente? ➜</p>
 				<a href="login.html">
-					<button type="button" class="headerButtonLogin">
+					<button type="button" class="headerButtonLogin"  id="headerButtonLogin">
 						Iniciar Sesión
 					</button>
 				</a>
@@ -50,7 +50,8 @@
 		<ul id="menu">
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="servicios.html">Servicios</a></li>
-			<li><a href="#" id="menuActive">Contacto</a></li>
+			<li><a href="contacto.html"  id="menuActive">Contacto</a></li>
+			<li id="userAreaMenuItem" style="display: none;"><a href="app.html">Área de usuario</a>
 		</ul>
 	</nav>
 	<section id="contentMargin1">
@@ -95,6 +96,9 @@
 	<footer>
 		©2025 El Garage De La Esquina | Todos los derechos reservados
 	</footer>
+
+	<script src="js/login.js"></script>
+
 </body>
 
 </html>

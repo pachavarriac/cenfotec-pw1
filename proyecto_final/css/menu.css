@@ -67,4 +67,6 @@ a#menuActive,
 a#menuActive:hover,
 a#menuActive:active {
   color: #4ac590;
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
