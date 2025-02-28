@@ -2,19 +2,8 @@ button {
   cursor: pointer;
 }
 
-/* .headerButtonLogin, */
-.loginButton {
-  border: 0;
-  background-color: #4ac590;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  text-transform: uppercase;
-  transition: all 0.2s ease;
-}
-
 .headerButtonLogin:focus,
-.headerButtonLogin:hover,
-.loginButton:focus,
-.loginButton:hover {
+.headerButtonLogin:hover {
   background-color: #4ac590;
   box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
 }
@@ -48,16 +37,10 @@ button {
   font-family: "Open Sans Regular";
   font-weight: bold;
   color: white;
-}
-
-.loginButton:focus,
-.loginButton:hover {
-  color: white;
-}
-
-.loginButton:active {
-  background-color: #35a776;
-  box-shadow: rgb(74, 197, 144) 0px 0px 15px 0px;
+  border: 1px solid white;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
 }
 
 .squareButton {
@@ -92,12 +75,12 @@ button {
 .headerButtonLogout {
   font-size: medium;
   font-weight: bold;
-  letter-spacing: 0.3vw;
+  letter-spacing: 0.2vw;
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 30px;
   border: 1px solid white;
   color: white;
-  padding: 10px 30px;
+  padding: 6px 30px;
   cursor: pointer;
   transition: border 0.2s, color 0.2s;
 }
