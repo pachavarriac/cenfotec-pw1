@@ -1,0 +1,72 @@
+button {
+  cursor: pointer;
+}
+
+.a-button{
+  border: 0;
+  border-radius: 50px;
+  height: clamp(49px, 9vw, 70px);
+  width: 100%;  
+  color: black;
+  font-size: calc(16.8px + (24 - 16.8) * ((100vw - 320px) / (1280 - 320)));
+  letter-spacing: 1.3pt;
+  background-color: rgb(72, 183, 135);
+  transition: background-color 0.2s ease;
+}
+
+.a-button:hover{
+  background-color: rgb(79, 203, 150);
+  box-shadow: rgb(79, 203, 150) 0px 0px 16px 0px;
+}
+
+.login-button {
+  border: 0;
+  letter-spacing: 2px;
+  font-size: medium;
+  padding: 17px 50px;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-weight: bold; */
+  color: black;
+  background-color: rgb(72, 183, 135);
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.login-button:hover{
+  background-color: rgb(79, 203, 150);
+  box-shadow: rgb(79, 203, 150) 0px 0px 16px 0px;
+}
+
+.landing-button-margin {
+  margin-top: 20px;
+}
+
+.squareButton {
+  width: 325px;
+  height: 65px;
+  border: 0;
+  border-radius: 15px;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  background-color: #2c2c2c;
+  font-family: "Open Sans Regular";
+  letter-spacing: 2px;
+  box-shadow: rgb(126, 126, 126) 0px 0px 15px 0px;
+}
+
+.squareButton:hover {
+  color: #4ac590;
+  box-shadow: rgb(74, 197, 144) 0px 0px 25px 0px;
+}
+
+.squareButton:active {
+  background-color: #4ac590;
+  color: #000000;
+  box-shadow: rgb(74, 197, 144) 0px 0px 25px 0px;
+}
+.squareButton:focus {
+  color: white;
+  box-shadow: rgb(126, 126, 126) 0px 0px 15px 0px;
+}
