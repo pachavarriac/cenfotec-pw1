@@ -6,48 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Garage De La Esquina</title>
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/login.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
 </head>
 
 <body>
-    <div id="videoBackground">
-        <video autoplay muted loop id="loginVideo">
+    <div class="video-background">
+        <video autoplay muted loop>
             <source src="media/workshop_01.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="container">
-        <div class="inner-container">
-            <img class="login-logo" src="images/logo.png" alt="logo">
-            <h1 class="welcome">
-                Bienvenido
-            </h1>
-            <form class="form" id="loginForm">
-                <div class="formControl">
+    <section>
+        <div class="login-container">
+            <img src="images/logo.png" class="login-logo">
+            <form method="post" class="form">
+                <div class="form-control">
                     <input type="text" id="username" name="username" required>
                     <label for="username">
-                        <span>Usuario</span>
+                        <span>Ingrese su usuario</span>
                     </label>
                 </div>
-                <div class="formControl">
+                <div class="form-control">
                     <input type="password" id="password" name="password" required>
                     <label for="password">
-                        <span>Contraseña</span>
+                        <span>Ingrese su contraseña</span>
                     </label>
                 </div><br>
-                <button type="submit" class="loginButton">Iniciar Sesión</button>
+                <button type="submit" id="login-button" class="login-button">Iniciar Sesión</button>
             </form>
-            <p id="message" class="message"></p>
         </div>
-    </div>
-
-    <!-- <script src="js/config.js"></script> -->
-    <script src="js/login.js"></script>
-    <!-- <script src="js/verify.js"></script> -->
-
+    </section>
+    <footer>
+        ©2025 El Garage De La Esquina | Todos los derechos reservados
+    </footer>
 </body>
 
 </html>
