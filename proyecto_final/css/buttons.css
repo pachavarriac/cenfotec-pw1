@@ -3,7 +3,7 @@
   border-radius: 50px;
   height: clamp(49px, 9vw, 70px);
   width: 100%;  
-  color: white;
+  color: black;
   font-weight: 900;
   font-size: calc(16.8px + (24 - 16.8) * ((100vw - 320px) / (1280 - 320)));
   letter-spacing: 1.3pt;
