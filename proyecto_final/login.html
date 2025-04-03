@@ -18,16 +18,16 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
 </head>
 
-<body>
-    <div class="video-background">
-        <video autoplay muted loop>
+<body class="m-0 p-0 ff-a fc-w">
+    <div class="fixed l-0 t-0 w-100dvw h-100dvh z--1 overflow-hidden">
+        <video autoplay muted loop class="w-100dvw h-100dvh object-cover">
             <source src="media/workshop_01.mp4" type="video/mp4">
         </video>
     </div>
     <section>
-        <div class="login-container">
-            <img src="images/logo.png" class="login-logo">
-            <form method="post" class="form">
+        <div class="flex flex-column w-500 bg-2c min-h-100-60 text-center justify-center items-center shadow-b z-1">
+            <img src="images/logo.png" class="text-center mb-40 w-350">
+            <form method="post" class="flex flex-column items-center mt-40" id="login-form">
                 <div class="form-control">
                     <input type="text" id="username" name="username" required>
                     <label for="username">
@@ -44,9 +44,9 @@
             </form>
         </div>
     </section>
-    <footer>
-        ©2025 El Garage De La Esquina | Todos los derechos reservados
-    </footer>
+    <footer class="content-center bg-b h-60 m-0 p-0 text-center">
+		©2025 El Garage De La Esquina | Todos los derechos reservados
+	</footer>
 </body>
 
 </html>

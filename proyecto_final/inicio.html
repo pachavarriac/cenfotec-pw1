@@ -15,64 +15,70 @@
     <script src="js/config.js" defer></script>
 </head>
 
-<body>
-    <header id="inicio">
-        <p>
-            <img src="images/location-banner.png" class="topbar-icon">
+<body class="p-0 m-0 bg-b ff-a">
+    <header id="inicio" class="fixed flex items-center justify-center w-100dvw h-40 z-100 gap-60 t-0 bg-b">
+        <p class="fw-b fc-w fs-18 ls-1d2">
+            <img src="images/location-banner.png" class="h-18">
             Local 64, c.115, Av.97. Alajuela. Costa Rica
         </p>
-        <p>
-            <img src="images/telephone-banner.png" class="topbar-icon">
+        <p class="fw-b fc-w fs-18 ls-1d2">
+            <img src="images/telephone-banner.png" class="h-18">
             800-438255377
         </p>
     </header>
-    <nav>
-        <img src="images/logo.png" class="menu-logo">
-        <ul class="menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+    <nav class="flex fixed justify-center items-center h-120 bg-b w-100dvw t-40 z-100 transition-0d1-l">
+        <img src="images/logo.png" class="ml transition-03-e z-1">
+        <ul class="menu list-none p-0 m-0 flex z-1 ml-25p">
+            <li class="m-10 inline-block mc">
+                <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="#inicio">Inicio</a>
+            </li>
+            <li class="m-10 inline-block mc">
+                <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="#servicios">Servicios</a>
+            </li>
+            <li class="m-10 inline-block mc">
+                <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="#contacto">Contacto</a>
+            </li>
         </ul>
     </nav>
 
 
     <!-- Banner -->
 
-    <section class="banner-background" id="banner">
-        <div class="banner-grid-container">
-            <div class="banner-grid-item-1">
-                <img src="images/blue-car.png" alt="">
+    <section class="bg-banner w-100dvw p-0 m-160 h-100-208 fc-w" id="banner">
+        <div class="p-0 m-0 grid grid-cols-1-2 h-100-208 min-w-1200 z--1 bg-b-a6">
+            <div class="flex flex-column justify-end items-start min-w-384">
+                <img src="images/blue-car.png" alt="" class="h-300 w-384">
             </div>
-            <div class="banner-grid-item-2">
-                <img src="images/logo.png" alt="">
-                <h1>Su vehiculo en las mejores manos</h1>
-                <h3>Repara y da mantenimiento a tu vehiculo con los mejores profesionales</h3>
-                <div class="banner-grid-item-2-container">
-                    <a href="#contacto" id="headAgenda"><button class="squareButton">Agenda una cita</button></a>
-                    <a href="#contacto" id="headNumber"><button class="squareButton">Tel. 800-438255377</button></a>
+            <div class="flex flex-column justify-center items-center text-center min-w-600 max-w-800 m-0 p-0">
+                <img src="images/logo.png" alt="" class="h-260">
+                <h1 class="fs-48 fw-b">Su vehiculo en las mejores manos</h1>
+                <h3 class="mt--20 fs-28">Repara y da mantenimiento a tu vehiculo con los mejores profesionales</h3>
+                <div class="mt-20 flex flex-row justify-center items-center gap-40">
+                    <a href="#contacto" id="headAgenda"><button class="p-20-40 border-1sw br-25 fc-b fs-24 fw-b bg-w-a8 ls-2">Agenda una cita</button></a>
+                    <a href="#contacto" id="headNumber"><button class="p-20-40 border-1sw br-25 fc-b fs-24 fw-b bg-w-a8 ls-2">Tel. 800-438255377</button></a>
                 </div>
             </div>
         </div>
     </section>
-
-    <hr class="hr-banner">
+    
+    <hr class="w-100 m-0 p-0 h-48 bg-226ce0">
 
     <!-- Inicio -->
 
-    <section class="object-gap-40 object-padding-40">
+    <section class="gap-40 p-40 bg-w">
 
-        <!-- Card-1 #1 -->
+        <div class="flex justify-center items-center gap-40 fc-b p-80">
 
-        <div class="center-container object-gap-40 object-font-color-black object-padding-20">
-            <div class="card-1">
-                <div class="card-1-ls">
-                    <img src="images/clock.png" alt="calendar" class="card-Icon-128">
+            <!-- Card-1 #1 -->
+            <div class="flex flex-row w-500 min-w-500 h-200">
+                <div class="mt-20 flex justify-center">
+                    <img src="images/clock.png" alt="calendar" class="h-128">
                 </div>
-                <div class="card-1-rs">
-                    <h2>
+                <div class="text-left pl-20 ls-0d5">
+                    <h2 class="fs-36">
                         Horario
                     </h2>
-                    <p>
+                    <p class="fs-24">
                         Lun-Vie: 8:00 am - 5:00 pm<br>
                         Sáb: 9:00 am - 4:00 pm<br>
                         Dom: Cerrado
@@ -82,15 +88,15 @@
 
             <!-- Card-1 #2 -->
 
-            <div class="card-1">
-                <div class="card-1-ls">
-                    <img src="images/location.png" alt="calendar" class="card-Icon-128">
+            <div class="flex flex-row w-500 min-w-500 h-200">
+                <div class="mt-20 flex justify-center">
+                    <img src="images/location.png" alt="geo pointer" class="h-128">
                 </div>
-                <div class="card-1-rs">
-                    <h2>
+                <div class="text-left pl-20 ls-0d5">
+                    <h2 class="fs-36">
                         Ubicación y Contacto
                     </h2>
-                    <p>
+                    <p class="fs-24">
                         Local 64<br>
                         Calle 115, Avenida 97<br>
                         Alajuela, Costa Rica<br>
@@ -99,19 +105,19 @@
                 </div>
             </div>
         </div>
-        <div class="center-container object-padding-80">
+        <div class="flex justify-center items-center  object-padding-80">
             <hr class="hr-1280">
         </div>
 
         <!-- Card-4 #1 -->
 
-        <div class="center-container object-padding-80">
-            <div class="card-4">
-                <img src="images/car.png" alt="">
-                <h1>
+        <div class="flex justify-center items-center p-80">
+            <div class="flex flex-column text-center items-center p-30 w-1000 fc-b">
+                <img src="images/car.png" alt="car" class="w-400">
+                <h1 class="fs-48 fw-b">
                     TRABAJAMOS LA MAYORÍA DE MARCAS & MODELOS
                 </h1>
-                <p>
+                <p class="fs-24">
                     Nos especializamos en la reparación de vehículos de la mayoría de marcas y modelos Americanos,
                     Europeos y Asiáticos. Nuestros técnicos están certificados y tienen muchos años de experiencia en la
                     industria automotriz. Por lo tanto, puede estar seguro de que su vehículo estará en buenas manos.
@@ -121,13 +127,13 @@
 
         <!-- Card-4 #2 -->
 
-        <div class="center-container">
-            <div class="card-4">
-                <img src="images/5star.png" alt="">
-                <h1>
+        <div class="flex justify-center items-center ">
+            <div class="flex flex-column text-center items-center p-30 w-1000 fc-b">
+                <img src="images/5star.png" alt="five stars" class="w-400">
+                <h1 class="fs-48 fw-b">
                     5 ESTRELLAS EN SERVICIO AL CLIENTE Y CALIDAD DEL TRABAJO DEL TALLER
                 </h1>
-                <p>
+                <p class="fs-24">
                     En El Garage De La Esquina nos enorgullosemos de contar con mas de 15 años con calificación de 5
                     estrellas por nuestros clientes. Nuestro objetivo es brindar un servicio excepcional a nuestros
                     clientes y sus vehículos en nuestras instalaciones altamente tecnificadas, lo cual nos permite
@@ -139,31 +145,31 @@
 
     <!-- Servicios -->
 
-    <section class="object-font-color-black blue-section">
-        <div class="card-wrapper-column object-padding-80">
-            <h1 id="servicios">NUESTROS SERVICIOS</h1>
+    <section class="fc-b bg-226ce0 fc-w m-0 p-0 w-100">
+        <div class="p-80 flex flex-column justify-center items-center text-center">
+            <h1 id="servicios" class="fs-48 fw-b">NUESTROS SERVICIOS</h1>
             <div class="services-container">
-                <div class="card-5">
-                    <img src="images/car-maintenance.png" alt="">
-                    <h2>Mantenimiento preventivo</h2>
-                    <hr>
-                    <p>Un mantenimiento preventivo oportuno alarga la vida útil de tu vehículo. Revisamos frenos,
+                <div class="w-1000 max-w-1000">
+                    <img src="images/car-maintenance.png" alt="" class="h-128">
+                    <h2 class="fs-36">Mantenimiento preventivo</h2>
+                    <hr class="w-200 bg-w b-0 h-8">
+                    <p class="fs-24">Un mantenimiento preventivo oportuno alarga la vida útil de tu vehículo. Revisamos frenos,
                         aceite, batería y más para garantizar tu seguridad. ¡Evita fallos costosos y maneja con
                         confianza!</p>
                 </div>
-                <div class="card-5">
-                    <img src="images/transmission.png" alt="">
-                    <h2>Cajas de transmisión</h2>
-                    <hr>
-                    <h3>¿Tu transmision no funciona como debería?</h3>
-                    <p>Reparamos y optimizamos la caja de transmisión de tu vehículo con precisión y calidad. Diagnóstico avanzado y repuestos garantizados para un desempeño óptimo. ¡Recupera la potencia y suavidad en cada cambio de marcha!</p>
+                <div class="w-1000 max-w-1000">
+                    <img src="images/transmission.png" alt="" class="h-128">
+                    <h2 class="fs-36">Cajas de transmisión</h2>
+                    <hr class="w-200 bg-w b-0 h-8">
+                    <h3 class="fs-28">¿Tu transmision no funciona como debería?</h3>
+                    <p class="fs-24">Reparamos y optimizamos la caja de transmisión de tu vehículo con precisión y calidad. Diagnóstico avanzado y repuestos garantizados para un desempeño óptimo. ¡Recupera la potencia y suavidad en cada cambio de marcha!</p>
                 </div>
-                <div class="card-5">
-                    <img src="images/engine.png" alt="">
-                    <h2>Motor</h2>
-                    <hr>
-                    <h3>¿Algo le suena en el motor?</h3>
-                    <p>Especialistas en reparación de motores para devolverle la potencia a tu vehículo. Diagnóstico preciso, repuestos de calidad y mano de obra experta. ¡Haz que tu motor funcione como nuevo!</p>
+                <div class="w-1000 max-w-1000">
+                    <img src="images/engine.png" alt="" class="h-128">
+                    <h2 class="fs-36">Motor</h2>
+                    <hr class="w-200 bg-w b-0 h-8">
+                    <h3 class="fs-28">¿Algo le suena en el motor?</h3>
+                    <p class="fs-24">Especialistas en reparación de motores para devolverle la potencia a tu vehículo. Diagnóstico preciso, repuestos de calidad y mano de obra experta. ¡Haz que tu motor funcione como nuevo!</p>
                 </div>
             </div>
         </div>
@@ -174,9 +180,9 @@
     <section id="contacto">
     </section>
 
-    <footer>
-        ©2025 El Garage De La Esquina | Todos los derechos reservados
-    </footer>
+    <footer class="h-60 text-center items-center content-center fc-w">
+		©2025 El Garage De La Esquina | Todos los derechos reservados
+	</footer>
 
 
 </body>
