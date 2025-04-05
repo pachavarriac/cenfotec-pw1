@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- JavaScript -->
-    <script src="js/config.js" defer></script>
+
 </head>
 
 <body class="p-0 m-0 bg-b ff-a">
@@ -44,24 +46,26 @@
 
     <!-- Banner -->
 
-    <section class="bg-banner w-100dvw p-0 m-160 h-100-208 fc-w" id="banner">
-        <div class="p-0 m-0 grid grid-cols-1-2 h-100-208 min-w-1200 z--1 bg-b-a6">
+    <section class="bg-banner w-100dvw p-0 m-160 h-100-220 fc-w" id="banner">
+        <div class="p-0 m-0 grid grid-cols-1-2 h-100-220 min-w-1200 z--1 bg-b-a6">
             <div class="flex flex-column justify-end items-start min-w-384">
                 <img src="images/blue-car.png" alt="" class="h-300 w-384">
             </div>
             <div class="flex flex-column justify-center items-center text-center min-w-600 max-w-800 m-0 p-0">
                 <img src="images/logo.png" alt="" class="h-260">
-                <h1 class="fs-48 fw-b">Su vehiculo en las mejores manos</h1>
-                <h3 class="mt--20 fs-28">Repara y da mantenimiento a tu vehiculo con los mejores profesionales</h3>
+                <h1 class="fs-42 fw-b">Su vehiculo en las mejores manos</h1>
+                <h3 class="mt--20 fs-20">Repara y da mantenimiento a tu vehiculo con los mejores profesionales</h3>
                 <div class="mt-20 flex flex-row justify-center items-center gap-40">
-                    <a href="#contacto" id="headAgenda"><button class="p-20-40 border-1sw br-25 fc-b fs-24 fw-b bg-w-a8 ls-2">Agenda una cita</button></a>
-                    <a href="#contacto" id="headNumber"><button class="p-20-40 border-1sw br-25 fc-b fs-24 fw-b bg-w-a8 ls-2">Tel. 800-438255377</button></a>
+                    <a id="inicio_reserve"><button class="p-20-40 border-1sw br-25 fc-b fs-24 fw-b bg-w-a8 ls-2">Agenda
+                            una cita</button></a>
+                    <a id="inicio_tel"><button class="p-20-40 border-1sw br-25 fc-b fs-24 fw-b bg-w-a8 ls-2">Tel.
+                            800-438255377</button></a>
                 </div>
             </div>
         </div>
     </section>
-    
-    <hr class="w-100 m-0 p-0 h-48 bg-226ce0">
+
+    <hr class="w-100 m-0 p-0 bg-226ce0 h-60">
 
     <!-- Inicio -->
 
@@ -153,7 +157,8 @@
                     <img src="images/car-maintenance.png" alt="" class="h-128">
                     <h2 class="fs-36">Mantenimiento preventivo</h2>
                     <hr class="w-200 bg-w b-0 h-8">
-                    <p class="fs-24">Un mantenimiento preventivo oportuno alarga la vida útil de tu vehículo. Revisamos frenos,
+                    <p class="fs-24">Un mantenimiento preventivo oportuno alarga la vida útil de tu vehículo. Revisamos
+                        frenos,
                         aceite, batería y más para garantizar tu seguridad. ¡Evita fallos costosos y maneja con
                         confianza!</p>
                 </div>
@@ -162,18 +167,129 @@
                     <h2 class="fs-36">Cajas de transmisión</h2>
                     <hr class="w-200 bg-w b-0 h-8">
                     <h3 class="fs-28">¿Tu transmision no funciona como debería?</h3>
-                    <p class="fs-24">Reparamos y optimizamos la caja de transmisión de tu vehículo con precisión y calidad. Diagnóstico avanzado y repuestos garantizados para un desempeño óptimo. ¡Recupera la potencia y suavidad en cada cambio de marcha!</p>
+                    <p class="fs-24">Reparamos y optimizamos la caja de transmisión de tu vehículo con precisión y
+                        calidad. Diagnóstico avanzado y repuestos garantizados para un desempeño óptimo. ¡Recupera la
+                        potencia y suavidad en cada cambio de marcha!</p>
                 </div>
                 <div class="w-1000 max-w-1000">
                     <img src="images/engine.png" alt="" class="h-128">
                     <h2 class="fs-36">Motor</h2>
                     <hr class="w-200 bg-w b-0 h-8">
                     <h3 class="fs-28">¿Algo le suena en el motor?</h3>
-                    <p class="fs-24">Especialistas en reparación de motores para devolverle la potencia a tu vehículo. Diagnóstico preciso, repuestos de calidad y mano de obra experta. ¡Haz que tu motor funcione como nuevo!</p>
+                    <p class="fs-24">Especialistas en reparación de motores para devolverle la potencia a tu vehículo.
+                        Diagnóstico preciso, repuestos de calidad y mano de obra experta. ¡Haz que tu motor funcione
+                        como nuevo!</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Locales -->
+
+    <section id="locales" class=" p-80 bg-w flex flex-column items-center">
+        <h1 class="fc-b fs-48 pb-80">Nuestros locales</h1>
+        <div class="flex flex-row justify-start items-center w-1100">
+            <div class="flex flex-column justify-center items-center">
+                <select name="ubicaciones" id="ubicaciones" size="5" class="scrollbar-none fc-b fs-24 select">
+                    <option class="p-20" value="alajuela">Alajuela</option>
+                    <option class="p-20" value="cartago">Cartago</option>
+                    <option class="p-20" value="guanacaste">Guanacaste</option>
+                    <option class="p-20" value="heredia">Heredia</option>
+                    <option class="p-20" value="san_jose">San José</option>
+                </select>
+            </div>
+            <div class="vl"></div>
+            <div class="flex flex-row justify-center items-center">
+                <div id="provincia"></div>
+                <div id="direccion"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="logos">
+        <div class="carousel-container bg-w invert-color" id="carousel">
+            <div class="carousel-track gap-60" id="carousel-track">
+                <img class="carousel-item" src="images/logos/alfa-romeo.jpg" alt="Logo alfa-romeo" />
+                <img class="carousel-item" src="images/logos/aston-martin.jpg" alt="Logo aston-martin" />
+                <img class="carousel-item" src="images/logos/audi.jpg" alt="Logo audi" />
+                <img class="carousel-item" src="images/logos/bentley.jpg" alt="Logo bentley" />
+                <img class="carousel-item" src="images/logos/bmw.jpg" alt="Logo bmw" />
+                <img class="carousel-item" src="images/logos/bugatti.jpg" alt="Logo bugatti" />
+                <img class="carousel-item" src="images/logos/buick.jpg" alt="Logo buick" />
+                <img class="carousel-item" src="images/logos/cadillac.jpg" alt="Logo cadillac" />
+                <img class="carousel-item" src="images/logos/chevrolet.jpg" alt="Logo chevrolet" />
+                <img class="carousel-item" src="images/logos/citroen.jpg" alt="Logo citroen" />
+                <img class="carousel-item" src="images/logos/ferrari.jpg" alt="Logo ferrari" />
+                <img class="carousel-item" src="images/logos/fiat.jpg" alt="Logo fiat" />
+                <img class="carousel-item" src="images/logos/ford.jpg" alt="Logo ford" />
+                <img class="carousel-item" src="images/logos/gmc.jpg" alt="Logo gmc" />
+                <img class="carousel-item" src="images/logos/honda.jpg" alt="Logo honda" />
+                <img class="carousel-item" src="images/logos/hyundai.jpg" alt="Logo hyundai" />
+                <img class="carousel-item" src="images/logos/infiniti.jpg" alt="Logo infiniti" />
+                <img class="carousel-item" src="images/logos/jaguar.jpg" alt="Logo jaguar" />
+                <img class="carousel-item" src="images/logos/jeep.jpg" alt="Logo jeep" />
+                <img class="carousel-item" src="images/logos/kia.jpg" alt="Logo kia" />
+                <img class="carousel-item" src="images/logos/lamborghini.jpg" alt="Logo lamborghini" />
+                <img class="carousel-item" src="images/logos/land-rover.jpg" alt="Logo land-rover" />
+                <img class="carousel-item" src="images/logos/lexus.jpg" alt="Logo lexus" />
+                <img class="carousel-item" src="images/logos/lincoln.jpg" alt="Logo lincoln" />
+                <img class="carousel-item" src="images/logos/maserati.jpg" alt="Logo maserati" />
+                <img class="carousel-item" src="images/logos/mazda.jpg" alt="Logo mazda" />
+                <img class="carousel-item" src="images/logos/mercedes-benz.jpg" alt="Logo mercedes-benz" />
+                <img class="carousel-item" src="images/logos/mitsubishi.jpg" alt="Logo mitsubishi" />
+                <img class="carousel-item" src="images/logos/nissan.jpg" alt="Logo nissan" />
+                <img class="carousel-item" src="images/logos/peugeot.jpg" alt="Logo peugeot" />
+                <img class="carousel-item" src="images/logos/porsche.jpg" alt="Logo porsche" />
+                <img class="carousel-item" src="images/logos/ram.jpg" alt="Logo ram" />
+                <img class="carousel-item" src="images/logos/renault.jpg" alt="Logo renault" />
+                <img class="carousel-item" src="images/logos/rolls-royce.jpg" alt="Logo rolls-royce" />
+                <img class="carousel-item" src="images/logos/seat.jpg" alt="Logo seat" />
+                <img class="carousel-item" src="images/logos/subaru.jpg" alt="Logo subaru" />
+                <img class="carousel-item" src="images/logos/suzuki.jpg" alt="Logo suzuki" />
+                <img class="carousel-item" src="images/logos/toyota.jpg" alt="Logo toyota" />
+                <img class="carousel-item" src="images/logos/volkswagen.jpg" alt="Logo volkswagen" />
+                <img class="carousel-item" src="images/logos/volvo.jpg" alt="Logo volvo" />
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="bg-b p-80">
+        <div class="gallery-container" id="gallery-container">
+            <div class="gallery-slider" id="gallery-slider">
+                <div id="gallery-item" class="gallery-item">
+                    <img src="images/workshop/workshop-01.jpg" alt="workshop-01" />
+                </div>
+                <div id="gallery-item" class="gallery-item">
+                    <img src="images/workshop/workshop-02.jpg" alt="workshop-02" />
+                </div>
+                <div id="gallery-item" class="gallery-item">
+                    <img src="images/workshop/workshop-03.jpg" alt="workshop-03" />
+                </div>
+                <div id="gallery-item" class="gallery-item">
+                    <img src="images/workshop/workshop-04.jpg" alt="workshop-04" />
+                </div>
+                <div id="gallery-item" class="gallery-item">
+                    <img src="images/workshop/workshop-05.jpg" alt="workshop-05" />
+                </div>
+                <div id="gallery-item" class="gallery-item">
+                    <img src="images/workshop/workshop-06.jpg" alt="workshop-06" />
+                </div>
+            </div>
+            <div id="gallery-buttons" class="gallery-buttons">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+            <ul id="gallery-dots" class="gallery-dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section> -->
+
 
     <!-- Contacto -->
 
@@ -181,10 +297,15 @@
     </section>
 
     <footer class="h-60 text-center items-center content-center fc-w">
-		©2025 El Garage De La Esquina | Todos los derechos reservados
-	</footer>
+        ©2025 El Garage De La Esquina | Todos los derechos reservados
+    </footer>
 
 
 </body>
+
+<script src="js/config.js" defer></script>
+<script src="js/locations.js" defer></script>
+<script src="js/carousel.js" defer></script>
+<script src="js/gallery.js"></script>
 
 </html>

@@ -1,6 +1,3 @@
-// login.html
-// Configuracion de credenciales
-// Configuracion de eventos para el formulario de login
 const credentials = {
   username: "cenfo",
   password: "123",
@@ -22,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       passwordLabel.textContent = "Ingrese su contraseña";
     }
   });
+
 
   function showError(icon, title, message, popup, color) {
     Swal.fire({
@@ -183,9 +181,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   let sections = document.querySelectorAll("section");
   let menuItems = document.querySelectorAll(".lip a");
@@ -199,30 +194,26 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
-  // Evento de clic en los enlaces del menú
   menuItems.forEach(item => {
       item.addEventListener("click", function (e) {
           e.preventDefault();
           let targetId = this.getAttribute("href").substring(1);
           let targetSection = document.getElementById(targetId);
 
-          // Desplazamiento suave a la sección
           window.scrollTo({
               top: targetSection.offsetTop - 50,
               behavior: "smooth"
           });
 
-          // Cambiar el borde en el menú
           setActiveLink(targetId);
       });
   });
 
-  // Detectar la sección visible en el viewport al hacer scroll
   window.addEventListener("scroll", function () {
       let scrollPosition = window.scrollY;
 
       sections.forEach(section => {
-          let sectionTop = section.offsetTop - 60; // Ajusta según el tamaño del menú
+          let sectionTop = section.offsetTop - 60;
           let sectionHeight = section.offsetHeight;
           let sectionId = section.getAttribute("id");
 
@@ -231,4 +222,14 @@ document.addEventListener("DOMContentLoaded", function () {
           }
       });
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const inicio_reserve = document.getElementById("inicio_reserve");
+
+  if (inicio_reserve) {
+      inicio_reserve.onclick = function () {
+          window.location.href = "cita.html";
+      };
+  }
 });

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Garage De La Esquina</title>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- JavaScript -->
+    
+</head>
+
+<body class="p-0 m-0 bg-b ff-a">
+    <header class="flex items-center justify-center w-100dvw h-40 gap-60  bg-b">
+        <p class="fw-b fc-w fs-18 ls-1d2">
+            <img src="images/location-banner.png" class="h-18">
+            Local 64, c.115, Av.97. Alajuela. Costa Rica
+        </p>
+        <p class="fw-b fc-w fs-18 ls-1d2">
+            <img src="images/telephone-banner.png" class="h-18">
+            800-438255377
+        </p>
+    </header>
+    <nav class="flex justify-center items-center h-120 bg-b">
+        <img src="images/logo.png" class="ml">
+        <ul class="menu list-none p-0 m-0 flex z-1 ml-25p">
+            <li class="m-10 inline-block mc">
+                <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="inicio.html">Inicio</a>
+            </li>
+            <li class="m-10 inline-block mc">
+                <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="inicio.html#servicios">Servicios</a>
+            </li>
+            <li class="m-10 inline-block mc">
+                <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="inicio.html#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <section class="bg-banner w-100dvw p-0 h-100-220 fc-w" id="banner">
+        <div class="bg-b-a6 z--1 h-100-220 flex justify-center items-center">
+            <div class="br-15 p-10-40-20-40 bg-2c b-1sw flex flex-column items-center">
+                <h1 class="fs-36 lh">Cita de taller</h1>
+                <form action="" class="text-center">
+                    <div class="flex flex-row justify-start items-center gap-40">
+                        <div class="flex flex-column items-start">
+                            <label for="name" class="fs-24 flex flex-row">
+                                <span class="fs-18">Nombre completo:</span>
+                                <span class="required">*</span>
+                            </label>
+                            <input class="pl-8 pr-8 br-6 w-200 h-30 appearance-none" type="text" id="name" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="flex flex-column gap-4 items-start">
+                            <label for="email" class="fs-24 flex flex-row">
+                                <span class="fs-18">Email:</span>
+                            </label>
+                            <input class="pl-8 pr-8 br-6 w-200 h-30 appearance-none" type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="flex flex-column items-start gap-4">
+                            <label for="tel" class="fs-24 flex flex-row">
+                                <span class="fs-18">Teléfono:</span>
+                                <span class="required">*</span>
+                            </label>
+                            <input class="pl-8 pr-8 br-6 w-200 h-30 appearance-none" type="tel" id="tel" name="tel" placeholder="Teléfono" required>
+                        </div>
+                        <div class="flex flex-column items-start gap-4">
+                            <label for="cel" class="fs-24 flex flex-row">
+                                <span class="fs-18">Celular:</span>
+                            </label>
+                            <input class="pl-8 pr-8 br-6 w-200 h-30 appearance-none" type="cel" id="cel" name="cel" placeholder="Celular">
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-center items-center gap-40 mt-20">
+                        <div class="flex flex-column gap-4 items-start">
+                            <label for="date" class="fs-24 flex flex-row">
+                                <span class="fs-18">Fecha:</span>
+                                <span class="required">*</span>
+                            </label>
+                            <input class="pl-8 pr-8 br-6 w-200 h-40 appearance-none text-center" type="date" id="date" name="date" required>
+                        </div>
+                        <div class="flex flex-column items-start gap-4">
+                            <label for="service" class="fs-24 flex flex-row">
+                                <span class="fs-18">Hora:</span>
+                                <span class="required">*</span>
+                            </label>
+                            <select name="time" id="time" class="appearance-none pl-8 pr-8 br-6 bg-w text-center w-220 h-40" required>
+                                <option value="" hidden>** Seleccione una hora **</option>
+                                <option value="8:00AM">8:00AM</option>
+                                <option value="9:00AM">9:00AM</option>
+                                <option value="10:00AM">10:00AM</option>
+                                <option value="11:00AM">11:00AM</option>
+                                <option value="12:00PM">12:00PM</option>
+                                <option value="1:00PM">1:00PM</option>
+                                <option value="2:00PM">2:00PM</option>
+                                <option value="3:00PM">3:00PM</option>
+                                <option value="4:00PM">4:00PM</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-column items-start gap-4">
+                            <label for="service" class="fs-24 flex flex-row">
+                                <span class="fs-18">Servicio:</span>
+                                <span class="required">*</span>
+                            </label>
+                            <select name="service" id="service" class="appearance-none pl-8 pr-8 br-6 bg-w text-center w-220 h-40" required>
+                                <option value="" hidden>** Seleccione un servicio **</option>
+                                <option value="mantenimiento">Mantenimiento</option>
+                                <option value="reparacion">Reparación</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-column gap-4 items-start">
+                            <label for="facility" class="fs-24 flex flex-row">
+                                <span class="fs-18">Taller:</span>
+                                <span class="required">*</span>
+                            </label>
+                            <select name="facility" id="facility" class="appearance-none pl-8 pr-8 br-6 bg-w text-center w-220 h-40" required>
+                                <option value="" hidden>** Seleccione un taller **</option>
+                                <option value="alajuela">Alajuela</option>
+                                <option value="cartago">Cartago</option>
+                                <option value="guanacaste">Guanacaste</option>
+                                <option value="heredia">Heredia</option>
+                                <option value="san_jose">San José</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-start gap-40 mt-20">
+                        <div class="flex flex-column gap-4 items-start">
+                            <label for="comment" class="fs-24 flex flex-row">
+                                <span class="fs-18">Comentario:</span>
+                            </label>
+                            <textarea name="comment" id="comment" cols="40" rows="4" placeholder="Agrega aquí tus comentarios" class="w-440 h-120 p-12-20 resize-none br-6 bg-w"></textarea>
+                        </div>
+                        <div class="flex flex-column justify-center w-220" style="height: 176px;">
+                            <div class="flex flex-column items-center justify-center text-center gap-10 h-176">
+                                <div class="bg-w fc-b p-10 cursor-pointer" id="agreement">Acuerdo de servicio</div>
+                                <div class="flex justify-center items-center gap-10 mt-20">
+                                    <input type="checkbox" name="agreement" id="agreement_check">
+                                    <label for="agreement">He leido el acuerdo</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center h-176">
+                            <input type="submit" class="bg-226ce0 p-20-40 br-25 b-0 fc-w fs-18" value="Agendar" id="reserve">
+                        </div>
+                    </div>
+                    
+                </form>
+                <p class="required ff-a ls-2 lh  mt-40 mb--40">* requeridos</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="h-60 text-center items-center content-center fc-w">
+		©2025 El Garage De La Esquina | Todos los derechos reservados
+	</footer>
+
+    <div id="agreement_block" class="agreement-block overflow-auto bg-b-a9 fixed display-none flex justify-center items-center w-100dvw z-100 t-0" style="align-content: center;">
+        <div class="flex justify-center items-center">
+            <div class="br-15 bg-w w-1100 h-100dvh">
+                <div class="p-40">
+                    <h1 class="fs-36 text-center lh-2">Acuerdo de servicio</h1>
+                    <p class="fs-18">Este acuerdo de servicio es un contrato entre el cliente y El Garage De La Esquina. Al aceptar este acuerdo, el cliente acepta los términos y condiciones establecidos a continuación:</p>
+                    <ul class="fs-18 lh-1d5">
+                        <li>El cliente acepta pagar por los servicios prestados por El Garage De La Esquina.</li>
+                        <li>El cliente acepta que El Garage De La Esquina no se hace responsable por daños o pérdidas que puedan ocurrir durante el proceso de reparación.</li>
+                        <li>El cliente acepta que El Garage De La Esquina tiene el derecho de rechazar cualquier vehículo que no cumpla con los estándares de seguridad.</li>
+                        <li>El cliente acepta que El Garage De La Esquina tiene el derecho de cancelar cualquier cita si el vehículo no cumple con los estándares de seguridad.</li>
+                        <li>El cliente acepta que todos los datos brindados en este formulario serán guardados y respaldados en una base de datos propiedad de El Garage De La Esquina.</li>
+                        <li>El cliente acepta que los datos brindados podrán ser utilizados por representantes de El Garage De La Esquina para contactarlo en caso de ser necesario.</li>
+                        <li>El cliente acepta que al seleccionar el "checkbox" de "He leido el acuerdo", o al hacer clic en el boton de aceptar estara de acuerdo con los terminos y condicones establecidos por El Garage De La Esquina.</li>
+                    </ul>
+                    <div class="flex justify-center items-center mt-40 gap-40">
+                        <button id="accept_agreement" class="bg-226ce0 p-20-40 br-25 b-0 fc-w fs-18 cursor-pointer">Aceptar</button>
+                        <button id="close_agreement" class="bg-red p-20-40 br-25 b-0 fc-w fs-18 cursor-pointer">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="js/cita.js" defer></script>
+
+</html>
