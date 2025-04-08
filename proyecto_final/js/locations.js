@@ -97,7 +97,7 @@ window.onload = function () {
   };
 
   function mostrarUbicacion(valor) {
-    provincia.innerHTML = `<img src="images/${valor}.jpg" style="height: 344px; width: 296px; margin: 0px 30px; border-radius: 10px; box-shadow: 0px 0px 15px 7px rgba(210,210,210,0.75);" alt="estadio" />`;
+    provincia.innerHTML = `<img src="images/provinces/${valor}.jpg" style="height: 344px; width: 296px; margin: 0px 30px; border-radius: 10px; box-shadow: 0px 0px 15px 7px rgba(210,210,210,0.75);" alt="estadio" />`;
     direccion.innerHTML = ubicaciones[valor] || '<p style="color: red;">Ubicación no disponible</p>';
   }
 

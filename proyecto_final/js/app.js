@@ -1,9 +1,9 @@
 const container = document.getElementById("app-container");
 const panorama = new PANOLENS.ImagePanorama("../images/car_workshop_pan.png");
 
-const balanceador_llantas = new PANOLENS.Infospot(50, PANOLENS.DataImage.Info);
-balanceador_llantas.position.set(492, 44, -500);
-balanceador_llantas.addHoverText("", -60);
+const balanceador_llantas = new PANOLENS.Infospot(64, 'images/panolense/tire-balance.png');
+balanceador_llantas.position.set(500 ,-69 , -499);
+balanceador_llantas.addHoverText("", -260);
 balanceador_llantas.element.innerHTML = `
   <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 5px; padding: 20px; width: 300px;">
     <h2 style="text-align: center; font-size: 18px; padding-bottom: 20px;">
@@ -15,9 +15,9 @@ balanceador_llantas.element.innerHTML = `
   </div>
 `;
 
-const destalonadora = new PANOLENS.Infospot(50, PANOLENS.DataImage.Info);
+const destalonadora = new PANOLENS.Infospot(64, 'images/panolense/tire-pressure-warning.png');
 destalonadora.position.set(302, -155, -500);
-destalonadora.addHoverText("", -60);
+destalonadora.addHoverText("", 60);
 destalonadora.element.innerHTML = `
   <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 5px; padding: 20px; width: 300px;">
     <h2 style="text-align: center; font-size: 18px; padding-bottom: 20px;">
@@ -29,12 +29,9 @@ destalonadora.element.innerHTML = `
   </div>
 `;
 
-const extractor_liquido_frenos = new PANOLENS.Infospot(
-  50,
-  PANOLENS.DataImage.Info
-);
+const extractor_liquido_frenos = new PANOLENS.Infospot(64, 'images/panolense/brake.png');
 extractor_liquido_frenos.position.set(-124, -123, -500);
-extractor_liquido_frenos.addHoverText("", -60);
+extractor_liquido_frenos.addHoverText("", 60);
 extractor_liquido_frenos.element.innerHTML = `
   <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 5px; padding: 20px; width: 400px;">
     <h2 style="text-align: center; font-size: 18px; padding-bottom: 20px;">
@@ -46,9 +43,9 @@ extractor_liquido_frenos.element.innerHTML = `
   </div>
 `;
 
-const alineacion_direccion = new PANOLENS.Infospot(50, PANOLENS.DataImage.Info);
+const alineacion_direccion = new PANOLENS.Infospot(64, 'images/panolense/wheel-alignment.png');
 alineacion_direccion.position.set(-500, 97, 19);
-alineacion_direccion.addHoverText("", -60);
+alineacion_direccion.addHoverText("", -270);
 alineacion_direccion.element.innerHTML = `
   <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 5px; padding: 20px; width: 400px;">
     <h2 style="text-align: center; font-size: 18px; padding-bottom: 20px;">
@@ -60,9 +57,9 @@ alineacion_direccion.element.innerHTML = `
   </div>
 `;
 
-const elevador_hidraulico = new PANOLENS.Infospot(50, PANOLENS.DataImage.Info);
+const elevador_hidraulico = new PANOLENS.Infospot(64, 'images/panolense/car-jack.png');
 elevador_hidraulico.position.set(-500, -38, 468);
-elevador_hidraulico.addHoverText("", -60);
+elevador_hidraulico.addHoverText("", -256);
 elevador_hidraulico.element.innerHTML =`
   <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 5px; padding: 20px; width: 400px;">
     <h2 style="text-align: center; font-size: 18px; padding-bottom: 20px;">
@@ -74,9 +71,8 @@ elevador_hidraulico.element.innerHTML =`
   </div>
 `;
 
-
-const gabinete_herramientas = new PANOLENS.Infospot(50, PANOLENS.DataImage.Info);
-const videoId = "gabineteVideo"; // ID único para el iframe
+const gabinete_herramientas = new PANOLENS.Infospot(64, 'images/panolense/tool.png');
+const videoId = "gabineteVideo";
 gabinete_herramientas.position.set(-500 ,-129 , 101);
 gabinete_herramientas.addHoverText("", -60);
 gabinete_herramientas.element.innerHTML = `
@@ -88,25 +84,54 @@ gabinete_herramientas.element.innerHTML = `
   </div>
 `;
 
+const encendido_auto = new PANOLENS.Infospot(48, 'images/panolense/horn.png');
+encendido_auto.position.set(131 ,-73 , 500);
+encendido_auto.addHoverText("", 60);
+encendido_auto.element.innerHTML = `
+  <div style="background-color: rgba(0, 0, 0, 0.8); color: #000; border-radius: 100px; padding: 40px; font-size: 14px;">
+        <audio controls>
+            <source src="media/car-ignition.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+`;
+
+const info = new PANOLENS.Infospot(48, 'images/panolense/information-button.png');
+info.position.set(246 ,73 , -500);
+info.addHoverText("", -256);
+info.element.innerHTML =`
+  <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 5px; padding: 20px; width: 400px;">
+    <h2 style="text-align: center; font-size: 18px; padding-bottom: 20px;">
+      Hoja de recepción en taller
+    <h2/>
+    <p style="font-size: 14px;">
+      Haz clic en el icono para ver ejemplo de hoja de recepcion en taller.
+    </p>
+  </div>
+`;
+info.addEventListener('click', function() {window.open("documents/ht-taller.pdf", "_blank");});
+
 function controlVideo(action) {
   const iframe = document.getElementById(videoId);
   if (iframe) {
     iframe.contentWindow.postMessage(`{"event":"command","func":"${action}"}`, "*");
   }
 }
-gabinete_herramientas.addEventListener("hover", () => {
-  controlVideo("playVideo");
-});
+// gabinete_herramientas.addEventListener("hover", () => {
+//   controlVideo("playVideo");
+// });
 gabinete_herramientas.addEventListener("hoverleave", () => {
   controlVideo("stopVideo");
 });
 
-panorama.add(gabinete_herramientas);
-panorama.add(balanceador_llantas);
-panorama.add(destalonadora);
 panorama.add(extractor_liquido_frenos);
+panorama.add(gabinete_herramientas);
 panorama.add(alineacion_direccion);
+panorama.add(balanceador_llantas);
 panorama.add(elevador_hidraulico);
+panorama.add(encendido_auto);
+panorama.add(destalonadora);
+panorama.add(info);
 
 viewer = new PANOLENS.Viewer({
   container: container,

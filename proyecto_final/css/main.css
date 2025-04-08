@@ -475,6 +475,28 @@ nav.scrolled {
   z-index: -1;
 }
 
+.border-3-w {
+  border: 3 solid white;
+}
+
+.bg-abs-1 {
+  position: relative;
+  overflow: hidden;
+  background: url(../images/workshop-clean.jpg);
+  background-size: cover;
+  z-index: -2;
+} 
+
+.bg-abs-1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+
 .hr-1280 {
   border: 1px solid black;
   width: 1280px;
