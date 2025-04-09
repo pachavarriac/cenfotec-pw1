@@ -42,10 +42,10 @@
 
 
     <section class="bg-banner w-100dvw p-0 h-100-220 fc-w" id="banner">
-        <div class="bg-b-a6 z--1 h-100-220 flex justify-center items-center">
-            <div class="br-15 p-10-40-20-40 bg-2c b-1sw flex flex-column items-center">
+        <div class="bg-b-a6 z--1 h-100-220 flex justify-center content-center">
+            <div class="br-15 p-10-40-20-40 bg-2c b-1sw flex flex-column items-center justify-center">
                 <h1 class="fs-36 lh">Cita de taller</h1>
-                <form action="" class="text-center">
+                <form action="" id="appointment_form" class="text-center">
                     <div class="flex flex-row justify-start items-center gap-40">
                         <div class="flex flex-column items-start">
                             <label for="name" class="fs-24 flex flex-row">
@@ -68,10 +68,10 @@
                             <input class="pl-8 pr-8 br-6 w-200 h-30 appearance-none" type="tel" id="tel" name="tel" placeholder="Teléfono" required>
                         </div>
                         <div class="flex flex-column items-start gap-4">
-                            <label for="cel" class="fs-24 flex flex-row">
-                                <span class="fs-18">Celular:</span>
+                            <label for="tag" class="fs-24 flex flex-row">
+                                <span class="fs-18">Placa:</span>
                             </label>
-                            <input class="pl-8 pr-8 br-6 w-200 h-30 appearance-none" type="cel" id="cel" name="cel" placeholder="Celular">
+                            <input class="pl-8 pr-8 br-6 w-200 h-30 appearance-none uppercase" type="text" id="tag" name="tag" placeholder="Placa de vehiculo">
                         </div>
                     </div>
                     <div class="flex flex-row justify-center items-center gap-40 mt-20">
@@ -118,11 +118,11 @@
                             </label>
                             <select name="facility" id="facility" class="appearance-none pl-8 pr-8 br-6 bg-w text-center w-220 h-40" required>
                                 <option value="" hidden>** Seleccione un taller **</option>
-                                <option value="alajuela">Alajuela</option>
-                                <option value="cartago">Cartago</option>
-                                <option value="guanacaste">Guanacaste</option>
-                                <option value="heredia">Heredia</option>
-                                <option value="san_jose">San José</option>
+                                <option value="Alajuela">Alajuela</option>
+                                <option value="Cartago">Cartago</option>
+                                <option value="Guanacaste">Guanacaste</option>
+                                <option value="Heredia">Heredia</option>
+                                <option value="San Jose">San José</option>
                             </select>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
 		©2025 El Garage De La Esquina | Todos los derechos reservados
 	</footer>
 
-    <div id="agreement_block" class="agreement-block overflow-auto bg-b-a9 fixed display-none flex justify-center items-center w-100dvw z-100 t-0" style="align-content: center;">
+    <div id="agreement_block" class="agreement-block overflow-auto bg-b-a9 fixed display-none flex justify-center items-center w-100dvw z-100 t-0">
         <div class="flex justify-center items-center">
             <div class="br-15 bg-w w-1100 h-100dvh">
                 <div class="p-40">
@@ -181,9 +181,27 @@
         </div>
     </div>
 
+    <div id="confirmation_block" class="confirmation-block overflow-auto bg-b-a9 fixed display-none flex justify-center items-center w-100dvw z-100 t-0">
+        <div class="flex justify-center items-center">
+            <div class="br-15 bg-w w-1100 h-100dvh">
+                <div class="p-40">
+                    <h1 class="fs-36 text-center lh-2">Confirmación de datos</h1>
+                    <p class="fs-18">Confirma que tus datos son correctos antes de enviar</p>
+                    <div id="client_data"></div>
+                    <div class="flex justify-center items-center mt-40 gap-40">
+                        <button id="confirm_data" class="bg-226ce0 p-20-40 br-25 b-0 fc-w fs-18 cursor-pointer">Son correctos</button>
+                        <button id="change_data" class="bg-red p-20-40 br-25 b-0 fc-w fs-18 cursor-pointer">Corregir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 </body>
 
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>emailjs.init('2Mao6e5Wr707lDDCr');</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/cita.js" defer></script>
 
 </html>

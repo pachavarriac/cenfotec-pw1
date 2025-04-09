@@ -1,5 +1,14 @@
+function goBack() {
+  const ref = document.referrer;
+  if (ref.includes('inicio.html')) {
+    history.back();
+  } else {
+    window.location.href = 'landing.html';
+  }
+}
+
 const container = document.getElementById("app-container");
-const panorama = new PANOLENS.ImagePanorama("../images/car_workshop_pan.png");
+const panorama = new PANOLENS.ImagePanorama("../images/panolense/car_workshop_pan.png");
 
 const balanceador_llantas = new PANOLENS.Infospot(64, 'images/panolense/tire-balance.png');
 balanceador_llantas.position.set(500 ,-69 , -499);
@@ -71,6 +80,36 @@ elevador_hidraulico.element.innerHTML =`
   </div>
 `;
 
+const prensa_hidraulica = new PANOLENS.Infospot(48, 'images/panolense/hydraulic-pressure.png');
+prensa_hidraulica.position.set(-500 ,-87 , -176);
+prensa_hidraulica.addHoverText("", -256);
+prensa_hidraulica.element.innerHTML =`
+  <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 5px; padding: 20px; width: 400px;">
+    <h2 style="text-align: center; font-size: 18px; padding-bottom: 20px;">
+      Prensa hidraulica
+    <h2/>
+    <p style="font-size: 14px;">
+      Funciona mediante un sistema de cilindros y fluido hidráulico, y se emplea comúnmente para tareas como extraer e instalar rodamientos, bujes, engranajes, y enderezar piezas metálicas. 
+    </p>
+  </div>
+`;
+
+const horario = new PANOLENS.Infospot(48, 'images/panolense/clock.png');
+horario.position.set(500 ,-44 , -8);
+horario.addHoverText("", -226);
+horario.element.innerHTML =`
+  <div style="background-color: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 5px; padding: 20px; width: 260px;">
+    <h2 style="text-align: center; font-size: 18px; padding-bottom: 20px;">
+      Horario de atención
+    <h2/>
+    <p style="font-size: 16px; pa">
+      Lun-Vie: 8:00 am - 5:00 pm<br>
+      Sáb: 9:00 am - 4:00 pm<br>
+      Dom: Cerrado
+    </p>
+  </div>
+`;
+
 const gabinete_herramientas = new PANOLENS.Infospot(64, 'images/panolense/tool.png');
 const videoId = "gabineteVideo";
 gabinete_herramientas.position.set(-500 ,-129 , 101);
@@ -129,8 +168,10 @@ panorama.add(gabinete_herramientas);
 panorama.add(alineacion_direccion);
 panorama.add(balanceador_llantas);
 panorama.add(elevador_hidraulico);
+panorama.add(prensa_hidraulica);
 panorama.add(encendido_auto);
 panorama.add(destalonadora);
+panorama.add(horario);
 panorama.add(info);
 
 viewer = new PANOLENS.Viewer({
