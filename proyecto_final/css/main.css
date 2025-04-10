@@ -808,3 +808,27 @@ nav.scrolled {
   padding: 10px 20px !important;
   font-size: 18px;
 }
+
+.top-35 {
+  top: 35px;
+}
+
+.right-35 {
+  right: 35px;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.lett {
+  left: 0;
+}
+
+.h-32 {
+  height: 32px;
+}
+
+.h-100dvh-160 {
+  height: calc(100dvh - 160px);
+}
