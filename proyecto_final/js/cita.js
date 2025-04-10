@@ -89,8 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
           background: '#2c2c2c',
           color: '#ffffff',
           customClass: {
-            popup: 'swal2-br-15',
-            confirmButton: 'swal2-button-custom'
+            popup: 'swal2-br-15 b-1sg',
+            confirmButton: 'bg-226ce0-i fc-w br-25-i p-10-20-i fs-18 p-10-20-i'
           }
         });
   
@@ -106,11 +106,11 @@ document.addEventListener("DOMContentLoaded", function () {
           background: '#2c2c2c',
           color: '#ffffff',
           customClass: {
-            popup: 'swal2-br-15',
-            confirmButton: 'swal2-button-custom'
+            popup: 'swal2-br-15 b-1sr',
+            confirmButton: 'bg-ee2524-i fc-w br-25-i p-10-20-i fs-18 p-10-20-i'
           }
         });
-        console.error("Error:", error);
+        // console.error("Error:", error);
       });
   });
   

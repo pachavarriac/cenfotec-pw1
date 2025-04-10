@@ -50,6 +50,14 @@
   border: 1px solid rgb(255, 255, 255);
 }
 
+.b-1sg {
+  border: 1px solid rgb(0, 255, 0);
+}
+
+.b-1sr {
+  border: 1px solid rgb(255, 0, 0);
+}
+
 .p-12-20 {
   padding: 12px 20px;
 }
@@ -667,6 +675,10 @@ nav.scrolled {
   border-radius: 25px;
 }
 
+.br-25-i {
+  border-radius: 25px !important;
+}
+
 .fs-24 {
   font-size: 1.5rem;
 }
@@ -801,12 +813,16 @@ nav.scrolled {
   border-radius: 15px !important;
 }
 
-.swal2-button-custom {
-  background-color: #226ce0 !important; /* tu azul de botón */
-  color: white !important;
-  border-radius: 25px !important;
+.bg-226ce0-i {
+  background-color: #226ce0 !important;
+}
+
+.bg-ee2524-i {
+  background-color: #ee2524 !important;
+}
+
+.p-10-20-i {
   padding: 10px 20px !important;
-  font-size: 18px;
 }
 
 .top-35 {
@@ -831,4 +847,8 @@ nav.scrolled {
 
 .h-100dvh-160 {
   height: calc(100dvh - 160px);
+}
+
+.w-100dvw-160 {
+  width: calc(100dvw - 160px);
 }

@@ -7,17 +7,12 @@ function goBack() {
   }
 }
 
-const closeButtons = document.querySelectorAll('.close');
-closeButtons.forEach(button => {
-  button.addEventListener('click', function() {
-    workshop_front_container.style.display = "none";
-  });
-});
-
 const container = document.getElementById("app-container");
 const workshop_front_img = document.getElementById("workshop_front_img");
 const workshop_front_alt = document.getElementById("workshop_front_alt");
 const workshop_front_container = document.getElementById("workshop_front_container");
+const toolbox_container = document.getElementById("toolbox_container")
+const toolbox_video = document.getElementById("toolbox_video")
 const panorama = new PANOLENS.ImagePanorama("../images/panolense/car_workshop_pan.png");
 
 const balanceador_llantas = new PANOLENS.Infospot(64, 'images/panolense/tire-balance.png');
@@ -120,18 +115,45 @@ horario.element.innerHTML =`
   </div>
 `;
 
+///////////////////////////////////////////////////
+////////////////////  VIDEO  //////////////////////
+///////////////////////////////////////////////////
+
 const gabinete_herramientas = new PANOLENS.Infospot(64, 'images/panolense/tool.png');
-const videoId = "gabineteVideo";
 gabinete_herramientas.position.set(-500 ,-129 , 101);
-gabinete_herramientas.addHoverText("", 100);
+gabinete_herramientas.addHoverText("", 36);
 gabinete_herramientas.element.innerHTML = `
-  <div style="background-color: rgba(0, 0, 0, 0.8); border: 1px solid rgba(255, 255, 255, 0.8); color: #fff; border-radius: 15px; width: 428px; overflow: hidden;">
+  <div style="background-color: rgba(0, 0, 0, 0.8); border: 1px solid rgba(255, 255, 255, 0.8); color: #fff; border-radius: 15px; width: 400px;">
     <h2 style="text-align: center; font-size: 22px; padding: 20px; width: 100%; background-color: white; color: black; border-radius: 15px 15px 0px 0px;">
       Gabinete de herramientas
     </h1> 
-      <iframe id="${videoId}" width="426" height="240" src="https://www.youtube.com/embed/df4_C9ez3oQ?enablejsapi=1" title="Gabinetes configurables Knova" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p style="font-size: 16px; padding: 24px; text-align: center;">
+      Clic en el boton para abrir el video.
+    </p>
   </div>
 `;
+gabinete_herramientas.addEventListener('click', function() {
+  const videoId = "df4_C9ez3oQ";
+  toolbox_container.style.display = "block";
+  toolbox_video.innerHTML = `<iframe id="${videoId}" width="1280" src="https://www.youtube.com/embed/df4_C9ez3oQ?enablejsapi=1&autoplay=1" title="Gabinetes configurables Knova" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+});
+
+const toolbox_close_video = document.getElementById("toolbox_close_video")
+toolbox_close_video.addEventListener('click', function() {
+  controlVideo("stopVideo");
+  toolbox_container.style.display = "none";
+});
+
+function controlVideo(action) {
+  const iframe = toolbox_video.querySelector('iframe');
+  if (iframe) {
+    iframe.contentWindow.postMessage(`{"event":"command","func":"${action}"}`, "*");
+  }
+}
+
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 
 const encendido_auto = new PANOLENS.Infospot(48, 'images/panolense/horn.png');
 encendido_auto.position.set(131 ,-73 , 500);
@@ -160,6 +182,10 @@ info.element.innerHTML =`
 `;
 info.addEventListener('click', function() {window.open("documents/ht-taller.pdf", "_blank");});
 
+///////////////////////////////////////////////////
+//////////////////////  IMAGEN  ///////////////////
+///////////////////////////////////////////////////
+
 const workshop_front = new PANOLENS.Infospot(48, 'images/panolense/image.png');
 workshop_front.position.set(500 ,140 , -6);
 workshop_front.addHoverText("", -236);
@@ -179,19 +205,14 @@ workshop_front.addEventListener('click', function() {
   workshop_front_alt.innerHTML = workshop_front_img.alt;
 });
 
-
-function controlVideo(action) {
-  const iframe = document.getElementById(videoId);
-  if (iframe) {
-    iframe.contentWindow.postMessage(`{"event":"command","func":"${action}"}`, "*");
-  }
-}
-// gabinete_herramientas.addEventListener("hover", () => {
-//   controlVideo("playVideo");
-// });
-gabinete_herramientas.addEventListener("hoverleave", () => {
-  controlVideo("stopVideo");
+const workshop_close_img = document.getElementById("workshop_close_img")
+workshop_close_img.addEventListener('click', function() {
+    workshop_front_container.style.display = "none";
 });
+
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 
 panorama.add(extractor_liquido_frenos);
 panorama.add(gabinete_herramientas);
