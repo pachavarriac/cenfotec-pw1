@@ -33,14 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const markError = (input, label, placeholder) => {
-    input.style.border = "1px solid red";
+    input.style.border = "3px solid red";
     if (label) label.style.color = "red";
     input.placeholder = "⚠️ " + placeholder;
     input.classList.add("placeholder-red");
   };
 
   const clearError = (input, label, placeholder) => {
-    input.style.border = "1px solid #ccc";
+    input.style.border = "3px solid white";
     if (label) label.style.color = "";
     input.placeholder = placeholder;
     input.classList.remove("placeholder-red");
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     input.addEventListener("focus", () => {
-      input.style.border = "1px solid #ccc";
+      input.style.border = "";
       if (label) label.style.color = "";
       input.placeholder = originalPlaceholder;
       input.classList.remove("placeholder-red");

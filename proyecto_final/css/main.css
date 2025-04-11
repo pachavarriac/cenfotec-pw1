@@ -955,3 +955,13 @@ nav.scrolled {
 .social-icon img.hovered {
   filter: none;
 }
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
