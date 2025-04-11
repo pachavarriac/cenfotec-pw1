@@ -167,7 +167,7 @@ encendido_auto.element.innerHTML = `
     </div>
 `;
 
-const info = new PANOLENS.Infospot(24, 'images/panolense/information-button.png');
+const info = new PANOLENS.Infospot(32, 'images/panolense/information-button.png');
 info.position.set(246 ,73 , -500);
 info.addHoverText("", -236);
 info.element.innerHTML =`

@@ -77,17 +77,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const inicioLink = document.querySelector('a[href="#inicio"]');
-
-//   if (inicioLink) {
-//     inicioLink.addEventListener("click", function (event) {
-//       event.preventDefault();
-
-//       const nav = document.querySelector("nav");
-//       const logo = document.querySelector(".ml");
-
-//       [nav, logo].forEach((n) => n.classList.remove("scrolled"));
-//     });
-//   }
-// });

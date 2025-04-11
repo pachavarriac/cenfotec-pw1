@@ -31,17 +31,24 @@
     <nav class="flex fixed justify-center items-center h-120 bg-b w-100dvw t-40 z-100 transition-0d1-l">
         <img src="images/logo.png" class="ml transition-c03-e">
         <ul class="menu list-none p-0 m-0 flex z-1 ml-25p">
-            <li class="m-10 inline-block mc">
+            <li class="m-10 inline-block mc cursor-pointer">
                 <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="#inicio">Inicio</a>
             </li>
-            <li class="m-10 inline-block mc">
+            <li class="m-10 inline-block mc cursor-pointer">
                 <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="#servicios">Servicios</a>
             </li>
-            <li class="m-10 inline-block mc">
+            <li class="m-10 inline-block mc cursor-pointer">
+                <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="#locales">Locaciones</a>
+            </li>
+            <li class="m-10 inline-block mc cursor-pointer">
+                <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="#gallery">Galería</a>
+            </li>
+            <li class="m-10 inline-block mc cursor-pointer">
                 <a class="lip transition-c03-e ls-1d5 decoration-none fs-20" href="#contacto">Contacto</a>
             </li>
         </ul>
-        <a href="app.html"><img src="images/360-virtual-tour-icon-3t.png" alt="Tour 360" class="pl-20 ml360 transition-c03-e"></a>
+        <a href="app.html"><img src="images/360-virtual-tour-icon-3t.png" alt="Tour 360"
+                class="pl-20 ml360 transition-c03-e"></a>
     </nav>
 
 
@@ -70,7 +77,7 @@
 
     <!-- Inicio -->
 
-    <section class="gap-40 p-40 bg-w">
+    <section class="gap-40 p-40 bg-eee">
 
         <div class="flex justify-center items-center gap-40 fc-b p-80">
 
@@ -197,7 +204,7 @@
 
     <!-- Servicios -->
 
-    <section class="fc-b bg-226ce0 fc-w m-0 p-0 w-100">
+    <section class="fc-b bg-107896 fc-w m-0 p-0 w-100">
         <div class="p-80 flex flex-column justify-center items-center text-center">
             <h1 id="servicios" class="fs-48 fw-b">NUESTROS SERVICIOS</h1>
             <div class="services-container">
@@ -234,11 +241,12 @@
 
     <!-- Locales -->
 
-    <section id="locales" class=" p-80 bg-w flex flex-column items-center">
-        <h1 class="fc-b fs-48 pb-80">Nuestros locales</h1>
+    <section class=" pt-160 pb-160 bg-eee flex flex-column items-center">
+        <h1 class="fc-b fs-48 pb-80" id="locales">Nuestros locales</h1>
         <div class="flex flex-row justify-start items-center w-1100">
             <div class="flex flex-column justify-center items-center">
-                <select name="ubicaciones" id="ubicaciones" size="5" class="scrollbar-none fc-b fs-24 select">
+                <select name="ubicaciones" id="ubicaciones" size="5"
+                    class="scrollbar-none fc-b fs-24 select cursor-pointer">
                     <option class="p-20" value="alajuela">Alajuela</option>
                     <option class="p-20" value="cartago">Cartago</option>
                     <option class="p-20" value="guanacaste">Guanacaste</option>
@@ -254,42 +262,44 @@
         </div>
     </section>
 
-    <section id="gallery" class="bg-abs-1">
-        <div class="p-80 relative z-1">
-            <h1 class="fc-w fs-48 text-center mb-40"> Galería de Fotos</h1>
-            <div class="gallery-container" id="gallery-container">
-                <div class="gallery-slider" id="gallery-slider">
-                    <div id="gallery-item" class="gallery-item">
-                        <img src="images/workshop/workshop-01.jpg" alt="workshop-01" />
+    <section class="p-80">
+        <div id="gallery" class="bg-abs-1 mt-20">
+            <div class="relative z-1">
+                <h1 class="fc-w fs-48 text-center mb-40">Galería de Fotos</h1>
+                <div class="gallery-container b-24sw-a8" id="gallery_container">
+                    <div class="gallery-slider" id="gallery-slider">
+                        <div id="gallery-item" class="gallery-item">
+                            <img src="images/workshop/workshop-01.jpg" alt="workshop-01" />
+                        </div>
+                        <div id="gallery-item" class="gallery-item">
+                            <img src="images/workshop/workshop-02.jpg" alt="workshop-02" />
+                        </div>
+                        <div id="gallery-item" class="gallery-item">
+                            <img src="images/workshop/workshop-03.jpg" alt="workshop-03" />
+                        </div>
+                        <div id="gallery-item" class="gallery-item">
+                            <img src="images/workshop/workshop-04.jpg" alt="workshop-04" />
+                        </div>
+                        <div id="gallery-item" class="gallery-item">
+                            <img src="images/workshop/workshop-05.jpg" alt="workshop-05" />
+                        </div>
+                        <div id="gallery-item" class="gallery-item">
+                            <img src="images/workshop/workshop-06.jpg" alt="workshop-06" />
+                        </div>
                     </div>
-                    <div id="gallery-item" class="gallery-item">
-                        <img src="images/workshop/workshop-02.jpg" alt="workshop-02" />
+                    <div id="gallery-buttons" class="gallery-buttons">
+                        <button id="prev">&lt;</button>
+                        <button id="next">&gt;</button>
                     </div>
-                    <div id="gallery-item" class="gallery-item">
-                        <img src="images/workshop/workshop-03.jpg" alt="workshop-03" />
-                    </div>
-                    <div id="gallery-item" class="gallery-item">
-                        <img src="images/workshop/workshop-04.jpg" alt="workshop-04" />
-                    </div>
-                    <div id="gallery-item" class="gallery-item">
-                        <img src="images/workshop/workshop-05.jpg" alt="workshop-05" />
-                    </div>
-                    <div id="gallery-item" class="gallery-item">
-                        <img src="images/workshop/workshop-06.jpg" alt="workshop-06" />
-                    </div>
+                    <ul id="gallery-dots" class="gallery-dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
-                <div id="gallery-buttons" class="gallery-buttons">
-                    <button id="prev">&lt;</button>
-                    <button id="next">&gt;</button>
-                </div>
-                <ul id="gallery-dots" class="gallery-dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </div>
         </div>
     </section>
@@ -297,20 +307,81 @@
 
     <!-- Contacto -->
 
-    <section id="contacto">
+    <section class="pt-80 pb-80 bg-eee">
+        <div class="flex flex-column justify-center items-center">
+            <form method="post" id="contact_form">
+                <div id="contacto" class="flex flex-column gap-30 p-40-80 b-1sw br-25 bg-2c">
+                    <h1 class="fs-48 fc-w text-center m--20">Contacto</h1>
+                    <div class="flex justify-center items-center gap-40">
+                        <div class="flex flex-column">
+                            <label for="contact_firstname" class="fc-w p-10 fs-24">
+                                <span>Nombre</span>
+                            </label>
+                            <input type="text" name="contact_firstname" id="contact_firstname" placeholder="Nombre" class="p-10 w-350 br-15">
+                        </div>
+                        <div class="flex flex-column">
+                            <label for="contact_lastname" class="fc-w p-10 fs-24">
+                                <span>Apellidos</span>
+                            </label>
+                            <input type="text" name="contact_lastname" id="contact_lastname" placeholder="Apellidos" class="p-10 w-350 br-15">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-40">
+                        <div class="flex flex-column">
+                            <label for="contact_email" class="fc-w p-10 fs-24">
+                                <span>Email</span>
+                            </label>
+                            <input type="email" name="contact_email" id="contact_email" placeholder="user@example.com"
+                                class="p-10 w-350 br-15">
+                        </div>
+                        <div class="flex flex-column">
+                            <label for="contact_tel" class="fc-w p-10 fs-24">
+                                <span>Teléfono</span>
+                            </label>
+                            <input type="text" name="contact_tel" id="contact_tel" placeholder="555-5555"
+                                class="p-10 w-350 br-15">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex flex-column">
+                            <label for="contact_message" class="fc-w p-10 fs-24">
+                                <span>Mensaje</span>
+                            </label>
+                            <textarea name="contact_message" id="contact_message" placeholder="Escriba aquí su mensaje"
+                                class="p-20 w-740 min-h-200 br-15"></textarea>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center pt-40">
+                        <input type="submit" value="Enviar" class="bg-226ce0 p-20-40 br-25 b-0 fc-w fs-24 " id="contact_submit">
+                    </div>
+                </div>
+            </form>
     </section>
 
-    <footer class="h-60 text-center items-center content-center fc-w">
-        ©2025 El Garage De La Esquina | Todos los derechos reservados
-    </footer>
+    <footer class="pt-40 text-center flex flex-column items-center content-center fc-w">
+        <div class="flex justify-center items-center p-10 gap-30 social-icon">
+            <a class="cursor-pointer" href="https://www.facebook.com/"><img class="h-50" src="images/social/facebook-b.png" alt=""></a>
+            <a class="cursor-pointer" href="https://www.instagram.com/"><img class="h-50" src="images/social/instagram-b.png" alt=""></a>
+            <a class="cursor-pointer" href="https://x.com"><img class="h-50" src="images/social/x-b.png" alt=""></a>
+            <a class="cursor-pointer" href="https://www.youtube.com/"><img class="h-50" src="images/social/youtube-b.png" alt=""></a>
+            <a class="cursor-pointer" href="https://www.tiktok.com/"><img class="h-50" src="images/social/tiktok-b.png" alt=""></a>
+        </div>
+        <p>©2025 El Garage De La Esquina | Todos los derechos reservados
+    </footer></p>
+        
 
 
 </body>
 
 <script src="js/nav.js" defer></script>
 <script src="js/config.js" defer></script>
-<script src="js/gallery.js"></script>
+<script src="js/gallery.js" defer></script>
+<script src="js/contacto.js" defer></script>
 <script src="js/carousel.js" defer></script>
 <script src="js/locations.js" defer></script>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </html>

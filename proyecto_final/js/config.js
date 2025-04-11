@@ -3,6 +3,7 @@ const credentials = {
   password: "123",
 };
 
+// CONTROL DE INGRESO
 document.addEventListener("DOMContentLoaded", function () {
   const usernameInput = document.getElementById("username");
   const passwordInput = document.getElementById("password");
@@ -20,7 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  usernameInput.addEventListener("focus", function () {
+    usernameLabel.textContent = "Usuario";
+  });
 
+  usernameInput.addEventListener("blur", function () {
+    if (!usernameInput.value) {
+      usernameLabel.textContent = "Ingrese su contraseña";
+    }
+  });
+
+
+
+  // FORMATO MENSAJE SWEET ALERT
   function showError(icon, title, message, popup, color) {
     Swal.fire({
       html:
@@ -52,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     passwordLabel.textContent = "Ingrese su contraseña";
   }
 
+  // MENSAJES SWEET ALERTS CUANDO HAY ERRORES EN LOS INPUTS EN EL LOGIN
   loginButton.addEventListener("click", function (event) {
     event.preventDefault();
     const username = usernameInput.value;
@@ -103,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// CAMBIO DE TAMAÑO NAV CUANDO SE HAY SCROLL EN EJE Y
 window.addEventListener("scroll", function () {
   const nav = document.querySelector("nav");
   const logo = document.querySelector(".ml");
@@ -115,12 +130,26 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+// CAMBIO DE BW A COLOR SOCIAL NETWORK ICONS
 document.addEventListener("DOMContentLoaded", function () {
   const inicio_reserve = document.getElementById("inicio_reserve");
 
   if (inicio_reserve) {
-      inicio_reserve.onclick = function () {
-          window.location.href = "cita.html";
-      };
+    inicio_reserve.onclick = function () {
+      window.location.href = "cita.html";
+    };
   }
+});
+
+document.querySelectorAll(".social-icon a img").forEach((img) => {
+  img.addEventListener("mouseenter", () => {
+    img.classList.add("hovered");
+    img.src = img.src.replace("-b.png", "-c.png");
+  });
+
+  img.addEventListener("mouseleave", () => {
+    img.classList.remove("hovered");
+    img.src = img.src.replace("-c.png", "-b.png");
+  });
 });

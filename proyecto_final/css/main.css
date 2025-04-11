@@ -6,6 +6,22 @@
   background-color: black;
 }
 
+.bg-0d3d56 {
+  background-color: #0d3d56;
+}
+
+.bg-3c6478 {
+  background-color: #3c6478;
+}
+
+.bg-107896 {
+  background-color: #107896;
+}
+
+.bg-eee {
+  background-color: #eee;
+}
+
 .fc-b {
   color: black;
 }
@@ -50,12 +66,20 @@
   border: 1px solid rgb(255, 255, 255);
 }
 
+.b-1sb {
+  border: 1px solid rgb(0, 0, 0);
+}
+
 .b-1sg {
   border: 1px solid rgb(0, 255, 0);
 }
 
 .b-1sr {
   border: 1px solid rgb(255, 0, 0);
+}
+
+.b-24sw-a8 {
+  border: 24px solid rgba(255, 255, 255, 0.8);
 }
 
 .p-12-20 {
@@ -117,6 +141,10 @@
 
 .min-h-100 {
   min-height: 100dvh;
+}
+
+.min-h-200 {
+  min-height: 200px;
 }
 
 .min-h-100-60 {
@@ -223,6 +251,10 @@
   width: 400px;
 }
 
+.w-740 {
+  width: 740px;
+}
+
 .w-1000 {
   width: 1000px;
 }
@@ -306,6 +338,18 @@ button {
 
 .gap-10 {
   gap: 10px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-30 {
+  gap: 30px;
 }
 
 .gap-60 {
@@ -655,6 +699,10 @@ nav.scrolled {
   padding: 20px 40px;
 }
 
+.p-40-80 {
+  padding: 40px 80px;
+}
+
 .p-10-40-20-40 {
   padding: 10px 40px 20px 40px;
 }
@@ -730,12 +778,12 @@ nav.scrolled {
   border-radius: 6px;
   width: 20px;
   height: 344px;
-  background-color: rgb(21, 83, 158);
+  background-color: rgb(0, 102, 227) !important;
   margin: 0px 30px 0px -6px;
 }
 
 .select {
-  background-color: white;
+  background-color: #eee;
   color: black;
   width: 200px;
   cursor: pointer;
@@ -744,7 +792,7 @@ nav.scrolled {
 .select option:checked {
   border: none;
   border-radius: 20px 0px 0px 20px;
-  background-color: rgb(21, 83, 158) !important;
+  background-color: rgb(0, 102, 227) !important;
   color: white;
 }
 
@@ -851,4 +899,59 @@ nav.scrolled {
 
 .w-100dvw-160 {
   width: calc(100dvw - 160px);
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-160 {
+  padding-top: 160px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pb-160 {
+  padding-bottom: 160px;
+}
+
+::placeholder {
+  color: #999;
+}
+
+.placeholder-red::placeholder {
+  color: red !important;
+}
+
+#contact_submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.social-icon img {
+  filter: invert(1);
+  /* transition: filter 0.3s ease; */
+}
+
+.social-icon img.hovered {
+  filter: none;
 }
