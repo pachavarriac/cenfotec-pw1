@@ -33,7 +33,7 @@
   display: inline-block;
   min-width: 5px;
   color: #fff;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 100ms;
 }
 
 .form-control input:focus + label span,
@@ -41,14 +41,11 @@
   color: #4ac590;
   transform: translateY(-10px);
   font-weight: bolder;
-  font-size: small;
-  letter-spacing: 1.5pt;
 }
 
 .custom-swal-popup-error,
 .custom-swal-popup-success {
   border-radius: 40px !important;
-  /* align-items: center; */
   padding: 10px;
   background-color: #2c2c2c;
   color: white;
@@ -86,19 +83,3 @@
 .object-cover {
   object-fit: cover;
 }
-
-/* .video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100dvw;
-  height: 100dvh;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.video-background video {
-  width: 100dvw;
-  height: 100dvh;
-  object-fit: cover;
-} */
