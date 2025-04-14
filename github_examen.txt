@@ -1,0 +1,11 @@
+https://github.com/pachavarriac/cenfotec-pw1/tree/main/proyecto_final
+
+
+
+El tour 360 esta ya implementado dentro del proyecto por lo que lo presentaré desde el desde el "landing.html" o delse el enlace en "inicio.html" 
+
+index.html ==> login.html ==> landing.html ▢> button[Tour 360]
+
+o 
+
+index.html ==> login.html ==> landing.html ▢> button[Inicio] ==> inicio.html ▢> nav[Tour 360] 
