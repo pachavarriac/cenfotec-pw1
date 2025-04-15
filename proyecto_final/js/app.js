@@ -199,7 +199,7 @@ workshop_front.element.innerHTML =`
   </div>
   
     <p style="font-size: 16px; padding: 24px; text-align: center;">
-      Haz clic en el icono para abrir la imagen.
+      Haz clic en el icono para agrandar la imagen.
     </p>
   </div>
 `;
