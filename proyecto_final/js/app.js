@@ -188,12 +188,16 @@ info.addEventListener('click', function() {window.open("documents/ht-taller.pdf"
 
 const workshop_front = new PANOLENS.Infospot(48, 'images/panolense/image.png');
 workshop_front.position.set(500 ,140 , -6);
-workshop_front.addHoverText("", -236);
+workshop_front.addHoverText("", -316);
 workshop_front.element.innerHTML =`
   <div style="background-color: rgba(0, 0, 0, 0.8); border: 1px solid rgba(255, 255, 255, 0.8); color: #fff; border-radius: 15px; width: 400px;">
-    <h2 style="text-align: center; font-size: 22px; padding: 20px; width: 100%; background-color: white; color: black; border-radius: 15px 15px 0px 0px;">
-      Imagen de taller
-    <h2/>
+  <h2 style="text-align: center; font-size: 22px; padding: 20px; width: 100%; background-color: white; color: black; border-radius: 15px 15px 0px 0px;">
+  Imagen de taller
+  <h2/>
+  <div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+    <img src="images/panolense/workshop-front.jpg" style="width: 300px">
+  </div>
+  
     <p style="font-size: 16px; padding: 24px; text-align: center;">
       Haz clic en el icono para abrir la imagen.
     </p>
